@@ -2,30 +2,30 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
-    <title type="text">Hugo 主题 MemE</title>
-    <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2021-06-19T17:25:42&#43;00:00</updated>
-    <id>https://example.com/</id>
-    <link rel="alternate" type="text/html" href="https://example.com/" />
-    <link rel="self" type="application/atom&#43;xml" href="https://example.com/atom.xml" />
+    <title type="text">🐑🐟🐟&amp;sam</title>
+    <subtitle type="html">我永远相信这个世界上有光。</subtitle>
+    <updated>2021-06-19T17:43:45&#43;00:00</updated>
+    <id>https://yangtudou.github.io/</id>
+    <link rel="alternate" type="text/html" href="https://yangtudou.github.io/" />
+    <link rel="self" type="application/atom&#43;xml" href="https://yangtudou.github.io/atom.xml" />
     <author>
-            <name>reuixiy</name>
-            <uri>https://example.com/</uri>
+            <name>洋san芋</name>
+            <uri>https://yangtudou.github.io/</uri>
             
-                <email>reuixiy@gmail.com</email>
+                <email>676683117@qq.com</email>
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.84.0">Hugo</generator>
         <entry>
             <title type="text">Hello World</title>
-            <link rel="alternate" type="text/html" href="https://example.com/posts/hello-world/" />
-            <id>https://example.com/posts/hello-world/</id>
-            <updated>2021-06-19T17:25:40&#43;00:00</updated>
+            <link rel="alternate" type="text/html" href="https://yangtudou.github.io/posts/hello-world/" />
+            <id>https://yangtudou.github.io/posts/hello-world/</id>
+            <updated>2021-06-19T17:43:42&#43;00:00</updated>
             <published>2021-06-20T01:09:55&#43;08:00</published>
             <author>
-                    <name>reuixiy</name>
+                    <name>洋san芋</name>
                     <uri>https://io-oi.me/</uri>
-                    <email>reuixiy@gmail.com</email>
+                    <email>676683117@qq.com</email>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html"></summary>
             
@@ -45,14 +45,14 @@
     
         <entry>
             <title type="text">我的第一篇linux上的博客</title>
-            <link rel="alternate" type="text/html" href="https://example.com/posts/my-first-post/" />
-            <id>https://example.com/posts/my-first-post/</id>
-            <updated>2021-06-19T17:25:40&#43;00:00</updated>
+            <link rel="alternate" type="text/html" href="https://yangtudou.github.io/posts/my-first-post/" />
+            <id>https://yangtudou.github.io/posts/my-first-post/</id>
+            <updated>2021-06-19T17:43:42&#43;00:00</updated>
             <published>2021-06-19T00:52:18&#43;08:00</published>
             <author>
-                    <name>reuixiy</name>
+                    <name>洋san芋</name>
                     <uri>https://io-oi.me/</uri>
-                    <email>reuixiy@gmail.com</email>
+                    <email>676683117@qq.com</email>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">感觉不错，当然还是和在macboook pro上遇到了同样的问题---brew用国外的……</summary>
             

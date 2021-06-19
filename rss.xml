@@ -7,34 +7,34 @@
 
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Hugo 主题 MemE</title>
-        <link>https://example.com/</link>
-        <description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description>
+        <title>🐑🐟🐟&amp;sam</title>
+        <link>https://yangtudou.github.io/</link>
+        <description>我永远相信这个世界上有光。</description>
         <generator>Hugo 0.84.0 https://gohugo.io/</generator>
         
             <language>zh-CN</language>
         
         
-            <managingEditor>reuixiy@gmail.com (reuixiy)</managingEditor>
+            <managingEditor>676683117@qq.com (洋san芋)</managingEditor>
         
         
-            <webMaster>reuixiy@gmail.com (reuixiy)</webMaster>
+            <webMaster>676683117@qq.com (洋san芋)</webMaster>
         
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Sat, 19 Jun 2021 17:25:42 &#43;0000</lastBuildDate>
+        <lastBuildDate>Sat, 19 Jun 2021 17:43:45 &#43;0000</lastBuildDate>
         
-            <atom:link rel="self" type="application/rss&#43;xml" href="https://example.com/rss.xml" />
+            <atom:link rel="self" type="application/rss&#43;xml" href="https://yangtudou.github.io/rss.xml" />
         
         
             <item>
                 <title>Hello World</title>
-                <link>https://example.com/posts/hello-world/</link>
-                <guid isPermaLink="true">https://example.com/posts/hello-world/</guid>
+                <link>https://yangtudou.github.io/posts/hello-world/</link>
+                <guid isPermaLink="true">https://yangtudou.github.io/posts/hello-world/</guid>
                 <pubDate>Sun, 20 Jun 2021 01:09:55 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (reuixiy)</author>
+                    <author>676683117@qq.com (洋san芋)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -54,11 +54,11 @@
         
             <item>
                 <title>我的第一篇linux上的博客</title>
-                <link>https://example.com/posts/my-first-post/</link>
-                <guid isPermaLink="true">https://example.com/posts/my-first-post/</guid>
+                <link>https://yangtudou.github.io/posts/my-first-post/</link>
+                <guid isPermaLink="true">https://yangtudou.github.io/posts/my-first-post/</guid>
                 <pubDate>Sat, 19 Jun 2021 00:52:18 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (reuixiy)</author>
+                    <author>676683117@qq.com (洋san芋)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
