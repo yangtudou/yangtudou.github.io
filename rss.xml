@@ -1,1 +1,83 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Hugo 主题 MemE</title><link>https://example.com/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.84.0 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>reuixiy@gmail.com (reuixiy)</managingEditor><webMaster>reuixiy@gmail.com (reuixiy)</webMaster><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><lastBuildDate>Sat, 19 Jun 2021 17:18:43 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://example.com/rss.xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Hugo 主题 MemE</title>
+        <link>https://example.com/</link>
+        <description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description>
+        <generator>Hugo 0.84.0 https://gohugo.io/</generator>
+        
+            <language>zh-CN</language>
+        
+        
+            <managingEditor>reuixiy@gmail.com (reuixiy)</managingEditor>
+        
+        
+            <webMaster>reuixiy@gmail.com (reuixiy)</webMaster>
+        
+        
+            <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+        
+        <lastBuildDate>Sat, 19 Jun 2021 17:21:59 &#43;0000</lastBuildDate>
+        
+            <atom:link rel="self" type="application/rss&#43;xml" href="https://example.com/rss.xml" />
+        
+        
+            <item>
+                <title>Hello World</title>
+                <link>https://example.com/posts/hello-world/</link>
+                <guid isPermaLink="true">https://example.com/posts/hello-world/</guid>
+                <pubDate>Sun, 20 Jun 2021 01:09:55 &#43;0800</pubDate>
+                
+                    <author>reuixiy@gmail.com (reuixiy)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description></description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>我的第一篇linux上的博客</title>
+                <link>https://example.com/posts/my-first-post/</link>
+                <guid isPermaLink="true">https://example.com/posts/my-first-post/</guid>
+                <pubDate>Sat, 19 Jun 2021 00:52:18 &#43;0800</pubDate>
+                
+                    <author>reuixiy@gmail.com (reuixiy)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description>&lt;p&gt;  感觉不错，当然还是和在macboook pro上遇到了同样的问题---&lt;strong&gt;brew用国外的源无法安装&lt;/strong&gt;，然后通过国内的源安装的。安装好以后装hugo一路顺风，除了从hugo上Git官方的主题包卡抓。最后的解决方案是去网站自己下载了主题包，拉进目录李后就好了。&lt;/p&gt;
+&lt;p&gt;  感觉很棒，以后就用linux写博客了，顺便学习一下这个系统。祝我好运。&lt;/p&gt;
+&lt;p&gt;  markdown 还需要多熟悉经此。2021年6月19号更新&lt;/p&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                    
+                
+            </item>
+        
+    </channel>
+</rss>
