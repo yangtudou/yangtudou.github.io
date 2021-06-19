@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Sat, 19 Jun 2021 18:11:32 &#43;0000</lastBuildDate>
+        <lastBuildDate>Sat, 19 Jun 2021 18:15:57 &#43;0000</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://yangtudou.github.io/rss.xml" />
         
@@ -53,37 +53,10 @@
             </item>
         
             <item>
-                <title>我的第一篇linux上的博客</title>
-                <link>https://yangtudou.github.io/posts/my-first-post/</link>
-                <guid isPermaLink="true">https://yangtudou.github.io/posts/my-first-post/</guid>
-                <pubDate>Sat, 19 Jun 2021 00:52:18 &#43;0800</pubDate>
-                
-                    <author>676683117@qq.com (洋san芋)</author>
-                
-                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
-                
-                    <description>&lt;p&gt;  感觉不错，当然还是和在macboook pro上遇到了同样的问题---&lt;strong&gt;brew用国外的源无法安装&lt;/strong&gt;，然后通过国内的源安装的。安装好以后装hugo一路顺风，除了从hugo上Git官方的主题包卡抓。最后的解决方案是去网站自己下载了主题包，拉进目录李后就好了。&lt;/p&gt;
-&lt;p&gt;  感觉很棒，以后就用linux写博客了，顺便学习一下这个系统。祝我好运。&lt;/p&gt;
-&lt;p&gt;  markdown 还需要多熟悉经此。2021年6月19号更新&lt;/p&gt;
-</description>
-                
-                
-                
-                
-                
-                    
-                        
-                    
-                        
-                    
-                
-            </item>
-        
-            <item>
-                <title></title>
+                <title>你好 hugo action</title>
                 <link>https://yangtudou.github.io/posts/about_hugo_action/</link>
                 <guid isPermaLink="true">https://yangtudou.github.io/posts/about_hugo_action/</guid>
-                <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+                <pubDate>Sun, 20 Jun 2021 01:06:30 &#43;0800</pubDate>
                 
                     <author>676683117@qq.com (洋san芋)</author>
                 
@@ -112,6 +85,33 @@
 &lt;li&gt;手机端也能有更好的阅读体验；&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;暂时就想到这些了。&lt;/p&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>我的第一篇linux上的博客</title>
+                <link>https://yangtudou.github.io/posts/my-first-post/</link>
+                <guid isPermaLink="true">https://yangtudou.github.io/posts/my-first-post/</guid>
+                <pubDate>Sat, 19 Jun 2021 00:52:18 &#43;0800</pubDate>
+                
+                    <author>676683117@qq.com (洋san芋)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description>&lt;p&gt;  感觉不错，当然还是和在macboook pro上遇到了同样的问题---&lt;strong&gt;brew用国外的源无法安装&lt;/strong&gt;，然后通过国内的源安装的。安装好以后装hugo一路顺风，除了从hugo上Git官方的主题包卡抓。最后的解决方案是去网站自己下载了主题包，拉进目录李后就好了。&lt;/p&gt;
+&lt;p&gt;  感觉很棒，以后就用linux写博客了，顺便学习一下这个系统。祝我好运。&lt;/p&gt;
+&lt;p&gt;  markdown 还需要多熟悉经此。2021年6月19号更新&lt;/p&gt;
 </description>
                 
                 
