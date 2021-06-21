@@ -23,10 +23,39 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Sat, 19 Jun 2021 19:08:58 &#43;0000</lastBuildDate>
+        <lastBuildDate>Mon, 21 Jun 2021 10:00:13 &#43;0000</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://yangtudou.github.io/rss.xml" />
         
+        
+            <item>
+                <title>UTC 时间格式的研究</title>
+                <link>https://yangtudou.github.io/posts/about_utc_time/</link>
+                <guid isPermaLink="true">https://yangtudou.github.io/posts/about_utc_time/</guid>
+                <pubDate>Mon, 21 Jun 2021 09:59:30 &#43;0800</pubDate>
+                
+                    <author>676683117@qq.com (洋san芋)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description>&lt;h4 id=&#34;utc-格式的时间也就是世界标准时间上加上市区主要是用来解决hugo的文章建立时间&#34;&gt;UTC 格式的时间，也就是世界标准时间上加上市区。主要是用来解决hugo的文章建立时间。&lt;/h4&gt;
+&lt;p&gt;根据 ISO 8601《数据存储和交换形式·信息交换·日期和时间的表示方法》，UTC时间，也就是国际统一时间/国际协调时，表示方法如下：&lt;/p&gt;
+&lt;p&gt;YYYYMMDD T HHMMSS Z(或者时区标识)。&lt;/p&gt;
+&lt;p&gt;例如，20100607T152000Z，表示2010年6月7号15点20分0秒，Z表示是标准时间&lt;/p&gt;
+&lt;p&gt;如果表示北京时间，那么就是：20100607T152000+08，其中 “+08” 表示东八区。&lt;/p&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Hello World</title>
