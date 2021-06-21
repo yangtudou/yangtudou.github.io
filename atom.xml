@@ -2,9 +2,9 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
-    <title type="text">🐑🐟🐟lovesam</title>
+    <title type="text">洋山芋suo</title>
     <subtitle type="html">我永远相信这个世界上有光。</subtitle>
-    <updated>2021-06-21T12:13:09&#43;00:00</updated>
+    <updated>2021-06-21T14:48:52&#43;00:00</updated>
     <id>https://yangtudou.github.io/</id>
     <link rel="alternate" type="text/html" href="https://yangtudou.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://yangtudou.github.io/atom.xml" />
@@ -20,20 +20,21 @@
             <title type="text">UTC 时间格式的研究</title>
             <link rel="alternate" type="text/html" href="https://yangtudou.github.io/posts/about_utc_time/" />
             <id>https://yangtudou.github.io/posts/about_utc_time/</id>
-            <updated>2021-06-21T12:13:07&#43;00:00</updated>
+            <updated>2021-06-21T14:48:49&#43;00:00</updated>
             <published>2021-06-21T09:59:30&#43;08:00</published>
             <author>
                     <name>洋san芋</name>
                     <uri>https://io-oi.me/</uri>
                     <email>676683117@qq.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">UTC 格式的时间，也就是世界标准时间上加上市区。主要是用来解决hugo的文章建立时间。 根……</summary>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">UTC 格式的时间，也就是世界标准时间上加上市区。主要是用来解决 hugo 的..文章建立时间..。……</summary>
             
-                <content type="html">&lt;h4 id=&#34;utc-格式的时间也就是世界标准时间上加上市区主要是用来解决hugo的文章建立时间&#34;&gt;UTC 格式的时间，也就是世界标准时间上加上市区。主要是用来解决hugo的文章建立时间。&lt;/h4&gt;
+                <content type="html">&lt;p&gt;&lt;strong&gt;UTC 格式的时间，也就是世界标准时间上加上市区。主要是用来解决 hugo 的..文章建立时间..。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;根据 ISO 8601《数据存储和交换形式·信息交换·日期和时间的表示方法》，UTC时间，也就是国际统一时间/国际协调时，表示方法如下：&lt;/p&gt;
 &lt;p&gt;YYYYMMDD T HHMMSS Z(或者时区标识)。&lt;/p&gt;
-&lt;p&gt;例如，20100607T152000Z，表示2010年6月7号15点20分0秒，Z表示是标准时间&lt;/p&gt;
-&lt;p&gt;如果表示北京时间，那么就是：20100607T152000+08，其中 “+08” 表示东八区。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;举个栗子，202106020T00:00:00Z，表示2020年6月20号15点0分0秒，Z表示是标准时间。如果表示北京时间，那么就是：20100607T152000+08，其中 “+08” 表示东八区。&lt;/p&gt;
 </content>
             
             
@@ -44,6 +45,20 @@
                     
                 
                     
+                        
+                            
+                            
+                            
+                                <category scheme="https://yangtudou.github.io/tags/hugo/" term="hugo" label="hugo" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://yangtudou.github.io/tags/%E5%B0%8F%E7%99%BD%E6%88%90%E9%95%BF%E4%B9%8B%E8%B7%AF/" term="小白成长之路" label="小白成长之路" />
+                            
+                        
+                    
                 
             
         </entry>
@@ -52,7 +67,7 @@
             <title type="text">Hello World</title>
             <link rel="alternate" type="text/html" href="https://yangtudou.github.io/posts/hello-world/" />
             <id>https://yangtudou.github.io/posts/hello-world/</id>
-            <updated>2021-06-21T12:13:07&#43;00:00</updated>
+            <updated>2021-06-21T14:48:49&#43;00:00</updated>
             <published>2021-06-20T01:09:55&#43;08:00</published>
             <author>
                     <name>洋san芋</name>
@@ -79,7 +94,7 @@
             <title type="text">你好 hugo action</title>
             <link rel="alternate" type="text/html" href="https://yangtudou.github.io/posts/about_hugo_action/" />
             <id>https://yangtudou.github.io/posts/about_hugo_action/</id>
-            <updated>2021-06-21T12:13:07&#43;00:00</updated>
+            <updated>2021-06-21T14:48:49&#43;00:00</updated>
             <published>2021-06-20T01:06:30&#43;08:00</published>
             <author>
                     <name>洋san芋</name>
@@ -129,7 +144,7 @@
             <title type="text">我的第一篇linux上的博客</title>
             <link rel="alternate" type="text/html" href="https://yangtudou.github.io/posts/my-first-post/" />
             <id>https://yangtudou.github.io/posts/my-first-post/</id>
-            <updated>2021-06-21T12:13:07&#43;00:00</updated>
+            <updated>2021-06-21T14:48:49&#43;00:00</updated>
             <published>2021-06-19T00:52:18&#43;08:00</published>
             <author>
                     <name>洋san芋</name>

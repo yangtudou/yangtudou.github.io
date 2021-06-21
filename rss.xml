@@ -7,7 +7,7 @@
 
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>🐑🐟🐟lovesam</title>
+        <title>洋山芋suo</title>
         <link>https://yangtudou.github.io/</link>
         <description>我永远相信这个世界上有光。</description>
         <generator>Hugo 0.84.0 https://gohugo.io/</generator>
@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Mon, 21 Jun 2021 12:13:09 &#43;0000</lastBuildDate>
+        <lastBuildDate>Mon, 21 Jun 2021 14:48:52 &#43;0000</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://yangtudou.github.io/rss.xml" />
         
@@ -38,11 +38,12 @@
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
-                    <description>&lt;h4 id=&#34;utc-格式的时间也就是世界标准时间上加上市区主要是用来解决hugo的文章建立时间&#34;&gt;UTC 格式的时间，也就是世界标准时间上加上市区。主要是用来解决hugo的文章建立时间。&lt;/h4&gt;
+                    <description>&lt;p&gt;&lt;strong&gt;UTC 格式的时间，也就是世界标准时间上加上市区。主要是用来解决 hugo 的..文章建立时间..。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;根据 ISO 8601《数据存储和交换形式·信息交换·日期和时间的表示方法》，UTC时间，也就是国际统一时间/国际协调时，表示方法如下：&lt;/p&gt;
 &lt;p&gt;YYYYMMDD T HHMMSS Z(或者时区标识)。&lt;/p&gt;
-&lt;p&gt;例如，20100607T152000Z，表示2010年6月7号15点20分0秒，Z表示是标准时间&lt;/p&gt;
-&lt;p&gt;如果表示北京时间，那么就是：20100607T152000+08，其中 “+08” 表示东八区。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;举个栗子，202106020T00:00:00Z，表示2020年6月20号15点0分0秒，Z表示是标准时间。如果表示北京时间，那么就是：20100607T152000+08，其中 “+08” 表示东八区。&lt;/p&gt;
 </description>
                 
                 
@@ -52,6 +53,20 @@
                     
                         
                     
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://yangtudou.github.io/tags/hugo/">hugo</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://yangtudou.github.io/tags/%E5%B0%8F%E7%99%BD%E6%88%90%E9%95%BF%E4%B9%8B%E8%B7%AF/">小白成长之路</category>
+                                
+                            
                         
                     
                 
