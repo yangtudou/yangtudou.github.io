@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">洋山芋suo</title>
     <subtitle type="html">我永远相信这个世界上有光。</subtitle>
-    <updated>2021-06-22T06:54:24&#43;00:00</updated>
+    <updated>2021-06-22T13:55:15&#43;00:00</updated>
     <id>https://yangtudou.github.io/</id>
     <link rel="alternate" type="text/html" href="https://yangtudou.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://yangtudou.github.io/atom.xml" />
@@ -20,11 +20,11 @@
             <title type="text">UTC 时间格式的研究</title>
             <link rel="alternate" type="text/html" href="https://yangtudou.github.io/posts/about_utc_time/" />
             <id>https://yangtudou.github.io/posts/about_utc_time/</id>
-            <updated>2021-06-22T06:54:20&#43;00:00</updated>
+            <updated>2021-06-22T13:55:13&#43;00:00</updated>
             <published>2021-06-21T09:59:30&#43;08:00</published>
             <author>
                     <name>洋san芋</name>
-                    <uri>https://io-oi.me/</uri>
+                    <uri>https://yangtudou.github.io/</uri>
                     <email>676683117@qq.com</email>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">UTC 格式的时间，也就是世界标准时间上加上市区。主要是用来解决 hugo 的..文章建立时间..。……</summary>
@@ -67,11 +67,11 @@
             <title type="text">Hello World</title>
             <link rel="alternate" type="text/html" href="https://yangtudou.github.io/posts/hello-world/" />
             <id>https://yangtudou.github.io/posts/hello-world/</id>
-            <updated>2021-06-22T06:54:20&#43;00:00</updated>
+            <updated>2021-06-22T13:55:13&#43;00:00</updated>
             <published>2021-06-20T01:09:55&#43;08:00</published>
             <author>
                     <name>洋san芋</name>
-                    <uri>https://io-oi.me/</uri>
+                    <uri>https://yangtudou.github.io/</uri>
                     <email>676683117@qq.com</email>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html"></summary>
@@ -94,11 +94,11 @@
             <title type="text">你好 hugo action</title>
             <link rel="alternate" type="text/html" href="https://yangtudou.github.io/posts/about_hugo_action/" />
             <id>https://yangtudou.github.io/posts/about_hugo_action/</id>
-            <updated>2021-06-22T06:54:20&#43;00:00</updated>
+            <updated>2021-06-22T13:55:13&#43;00:00</updated>
             <published>2021-06-20T01:06:30&#43;08:00</published>
             <author>
                     <name>洋san芋</name>
-                    <uri>https://io-oi.me/</uri>
+                    <uri>https://yangtudou.github.io/</uri>
                     <email>676683117@qq.com</email>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">这篇文章主要是梳理一下最近用hugo+github自建博客的经历。 这个个人博客的出生……</summary>
@@ -144,11 +144,11 @@
             <title type="text">我的第一篇linux上的博客</title>
             <link rel="alternate" type="text/html" href="https://yangtudou.github.io/posts/my-first-post/" />
             <id>https://yangtudou.github.io/posts/my-first-post/</id>
-            <updated>2021-06-22T06:54:20&#43;00:00</updated>
+            <updated>2021-06-22T13:55:13&#43;00:00</updated>
             <published>2021-06-19T00:52:18&#43;08:00</published>
             <author>
                     <name>洋san芋</name>
-                    <uri>https://io-oi.me/</uri>
+                    <uri>https://yangtudou.github.io/</uri>
                     <email>676683117@qq.com</email>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">感觉不错，当然还是和在macboook pro上遇到了同样的问题---brew用国外的……</summary>
