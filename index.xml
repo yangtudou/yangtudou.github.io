@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>环游世界</title><link>https://yangtudou.github.io/</link><description>Recent content on 环游世界</description><generator>Hugo -- gohugo.io</generator><language>zh</language><lastBuildDate>Mon, 21 Jun 2021 09:59:30 +0800</lastBuildDate><atom:link href="https://yangtudou.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>UTC 时间格式的研究</title><link>https://yangtudou.github.io/%E4%B8%96%E7%95%8C%E5%BE%88%E5%A4%A7/about_utc_time/</link><pubDate>Mon, 21 Jun 2021 09:59:30 +0800</pubDate><guid>https://yangtudou.github.io/%E4%B8%96%E7%95%8C%E5%BE%88%E5%A4%A7/about_utc_time/</guid><description>UTC 格式的时间，也就是世界标准时间上加上市区。主要是用来解决 hugo 的..文章建立时间..。
+根据 ISO 8601《数据存储和交换形式·信息交换·日期和时间的表示方法》，UTC时间，也就是国际统一时间/国际协调时，表示方法如下：
+YYYYMMDD T HHMMSS Z(或者时区标识)。
+举个栗子，202106020T00:00:00Z，表示2020年6月20号15点0分0秒，Z表示是标准时间。如果表示北京时间，那么就是：20100607T152000+08，其中 “+08” 表示东八区。</description></item><item><title>Hello World</title><link>https://yangtudou.github.io/%E4%B8%96%E7%95%8C%E5%BE%88%E5%A4%A7/hello-world/</link><pubDate>Sun, 20 Jun 2021 01:09:55 +0800</pubDate><guid>https://yangtudou.github.io/%E4%B8%96%E7%95%8C%E5%BE%88%E5%A4%A7/hello-world/</guid><description/></item><item><title>你好 hugo action</title><link>https://yangtudou.github.io/%E4%B8%96%E7%95%8C%E5%BE%88%E5%A4%A7/about_hugo_action/</link><pubDate>Sun, 20 Jun 2021 01:06:30 +0800</pubDate><guid>https://yangtudou.github.io/%E4%B8%96%E7%95%8C%E5%BE%88%E5%A4%A7/about_hugo_action/</guid><description>这篇文章主要是梳理一下最近用hugo+github自建博客的经历。 这个个人博客的出生也算是比较坎坷，从大学刚毕业那会就陆陆续续的有在做了，经历了hexo==&amp;raquo;hugo==&amp;raquo;gridea==&amp;raquo;hugo 一开始的想法比较简单，无非就是想把自己的所思所想放在网上与别人分享的同时自己也做个 记录，老话说的好嘛..好记性不如烂笔头..
+刚开始建站也比较简单，每个平台都会基础。但出生设计吧，总喜欢搞点好的主题，辗转一圈也没找到合适的，思来想去还是觉得要自己做一个主题。但各种编程语言说实话真的难 就我这种小白来说。关键我还是一个没耐心的人。后来就放弃了。毕业后第二年面临找工作，面试的时候面试官总问我有没有作品，一想还真没什么实质性的作品。但要想..滥竽充数..总要有点手段的吧。 所以就想着要是把简历做成网页，附带个人作品那不是很帅，肯定会有人要的。说干就干，这期间还是沉下心学到不少东西的，如Go语言啊什么的，也自学了css语言。但最后还是没干成这件事。
+辗转来到了今时今日，一方面我是想继续以前的想法，二者有了女朋友后想放一些我们的经历在上面，以后等小孩子长大了也能给他们看看爸妈年少时候的疯狂。想想就挺美的，于是说干就干，在一个多礼拜的 不懈努力下终于算是完成了我基础的需求。
+在任何设备上都能写文章更新，不用git来git去的。 主题能符合我的审美。 关于这里的低一点需求，我是通过hugo action来实现的，逻辑很简单。在github上新建两个仓，一个是用来生成网页的，一个是用来存后端的资料。也就是说通过这个方式能自动部署到仓内生成静态网页。
+期间我遇到了很多问题，主要集中在两个仓之间怎么有链接，产生一个仓变化另一个仓就能自动部署。网上有各式各样的教程，但都大同小异，最后我是在阅读官方文档并结合前人教程弄好的。 我将会把我遇到的问题和解决方案单独写篇文章，希望能帮到像我一样的小白。
+接下来的目标是在这个主题的基础上修改出属于自己的主题，能最大限度满足我的需求
+能上传有版权保护的图片，别人不可以轻易下载； 页面排版更加美观； 能加入音乐播放器； 手机端也能有更好的阅读体验； 关于
+hugo --minify 部署以后没有文章是因为md文档里有
+draft: true 把这个删掉就行了
+暂时就想到这些了。</description></item><item><title>我的第一篇linux上的博客</title><link>https://yangtudou.github.io/%E4%B8%96%E7%95%8C%E5%BE%88%E5%A4%A7/my-first-post/</link><pubDate>Sat, 19 Jun 2021 00:52:18 +0800</pubDate><guid>https://yangtudou.github.io/%E4%B8%96%E7%95%8C%E5%BE%88%E5%A4%A7/my-first-post/</guid><description>感觉不错，当然还是和在macboook pro上遇到了同样的问题&amp;mdash;brew用国外的源无法安装，然后通过国内的源安装的。安装好以后装hugo一路顺风，除了从hugo上Git官方的主题包卡抓。最后的解决方案是去网站自己下载了主题包，拉进目录李后就好了。
+ 感觉很棒，以后就用linux写博客了，顺便学习一下这个系统。祝我好运。
+ markdown 还需要多熟悉经此。2021年6月19号更新</description></item></channel></rss>
