@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>杨土豆个人网站</title>
-    <link>yangtudolovesam.com/</link>
-    <description>Recent content on 杨土豆个人网站</description>
+    <title>博客 on 杨土豆个人网站</title>
+    <link>yangtudolovesam.com/blog/</link>
+    <description>Recent content in 博客 on 杨土豆个人网站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="yangtudolovesam.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="yangtudolovesam.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>桂林山水甲天下</title>
       <link>yangtudolovesam.com/blog/post-1/</link>
@@ -54,15 +54,6 @@
     </item>
     
     <item>
-      <title>杨土豆</title>
-      <link>yangtudolovesam.com/author/yangtudou/</link>
-      <pubDate>Tue, 26 Jan 2021 10:14:19 +0600</pubDate>
-      
-      <guid>yangtudolovesam.com/author/yangtudou/</guid>
-      <description>就叫我土豆好了</description>
-    </item>
-    
-    <item>
       <title>Banana is the best meal packages in the UK spark outrage online</title>
       <link>yangtudolovesam.com/blog/post-4/</link>
       <pubDate>Mon, 25 Jan 2021 16:56:47 +0600</pubDate>
@@ -87,71 +78,6 @@
       
       <guid>yangtudolovesam.com/blog/post-2/</guid>
       <description>Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.</description>
-    </item>
-    
-    <item>
-      <title>查找结果</title>
-      <link>yangtudolovesam.com/search/</link>
-      <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      
-      <guid>yangtudolovesam.com/search/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Elements</title>
-      <link>yangtudolovesam.com/elements/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>yangtudolovesam.com/elements/</guid>
-      <description>Heading example Here is example of hedings. You can use this heading by following markdownify rules. For example: use # for heading 1 and use ###### for heading 6.</description>
-    </item>
-    
-    <item>
-      <title>No Search Found</title>
-      <link>yangtudolovesam.com/404/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>yangtudolovesam.com/404/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Privacy</title>
-      <link>yangtudolovesam.com/privacy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>yangtudolovesam.com/privacy/</guid>
-      <description>Responsibility of Contributors Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis.</description>
-    </item>
-    
-    <item>
-      <title>Terms And Conditions</title>
-      <link>yangtudolovesam.com/terms-conditions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>yangtudolovesam.com/terms-conditions/</guid>
-      <description>Responsibility of Contributors Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis.</description>
-    </item>
-    
-    <item>
-      <title>关于</title>
-      <link>yangtudolovesam.com/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>yangtudolovesam.com/about/</guid>
-      <description>我叫杨雨育，在化妆品行业从事过三年多的，从产品早期雏形到落地都有经历过。早年间是一个3D建模出效果图的设计师，后来随着接触的供应商越来越多，发现想要让设计完美呈现并落地。设计师除了要考虑美观，还有很多要学习的地方。
-对于市场需求的分析，对于公司产品的定位、对于产品结构的设计，等等。而这些都是建立在“沟通”上的。经过很多碰撞摩擦，被雕琢过的最终形态的落地项目，才是好产品。也许这并不是设计之初的完美方案，但这一定是“众口难调”下最完美的解决方案。
-本网站主要展示一些这几年内接手的项目，花盒、礼盒、软管等。有一些是实际落地的，有一些是在概念就被砍的，我会自己分析复盘其中的原因。</description>
-    </item>
-    
-    <item>
-      <title>归档</title>
-      <link>yangtudolovesam.com/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>yangtudolovesam.com/contact/</guid>
-      <description></description>
     </item>
     
   </channel>

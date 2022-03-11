@@ -1,10 +1,56 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on 杨土豆信息中心</title>
-    <link>https://yangtudou.github.io/categories/</link>
-    <description>Recent content in Categories on 杨土豆信息中心</description>
+    <title>Categories on 杨土豆个人网站</title>
+    <link>yangtudolovesam.com/categories/</link>
+    <description>Recent content in Categories on 杨土豆个人网站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language><atom:link href="https://yangtudou.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 05 Feb 2021 16:56:47 +0600</lastBuildDate><atom:link href="yangtudolovesam.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>归档</title>
+      <link>yangtudolovesam.com/categories/%E5%BD%92%E6%A1%A3/</link>
+      <pubDate>Fri, 05 Feb 2021 16:56:47 +0600</pubDate>
+      
+      <guid>yangtudolovesam.com/categories/%E5%BD%92%E6%A1%A3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Photography</title>
+      <link>yangtudolovesam.com/categories/photography/</link>
+      <pubDate>Thu, 04 Feb 2021 16:56:47 +0600</pubDate>
+      
+      <guid>yangtudolovesam.com/categories/photography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LifeStyle</title>
+      <link>yangtudolovesam.com/categories/lifestyle/</link>
+      <pubDate>Wed, 03 Feb 2021 16:56:47 +0600</pubDate>
+      
+      <guid>yangtudolovesam.com/categories/lifestyle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accessories</title>
+      <link>yangtudolovesam.com/categories/accessories/</link>
+      <pubDate>Tue, 02 Feb 2021 16:56:47 +0600</pubDate>
+      
+      <guid>yangtudolovesam.com/categories/accessories/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Food</title>
+      <link>yangtudolovesam.com/categories/food/</link>
+      <pubDate>Mon, 25 Jan 2021 16:56:47 +0600</pubDate>
+      
+      <guid>yangtudolovesam.com/categories/food/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

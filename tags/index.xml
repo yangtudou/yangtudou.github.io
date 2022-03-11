@@ -1,10 +1,110 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on 杨土豆信息中心</title>
-    <link>https://yangtudou.github.io/tags/</link>
-    <description>Recent content in Tags on 杨土豆信息中心</description>
+    <title>Tags on 杨土豆个人网站</title>
+    <link>yangtudolovesam.com/tags/</link>
+    <description>Recent content in Tags on 杨土豆个人网站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language><atom:link href="https://yangtudou.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="yangtudolovesam.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>世界很大</title>
+      <link>yangtudolovesam.com/tags/%E4%B8%96%E7%95%8C%E5%BE%88%E5%A4%A7/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>yangtudolovesam.com/tags/%E4%B8%96%E7%95%8C%E5%BE%88%E5%A4%A7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>旅游</title>
+      <link>yangtudolovesam.com/tags/%E6%97%85%E6%B8%B8/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>yangtudolovesam.com/tags/%E6%97%85%E6%B8%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>标签1</title>
+      <link>yangtudolovesam.com/tags/%E6%A0%87%E7%AD%BE1/</link>
+      <pubDate>Fri, 05 Feb 2021 16:56:47 +0600</pubDate>
+      
+      <guid>yangtudolovesam.com/tags/%E6%A0%87%E7%AD%BE1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>标签2</title>
+      <link>yangtudolovesam.com/tags/%E6%A0%87%E7%AD%BE2/</link>
+      <pubDate>Fri, 05 Feb 2021 16:56:47 +0600</pubDate>
+      
+      <guid>yangtudolovesam.com/tags/%E6%A0%87%E7%AD%BE2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Photography</title>
+      <link>yangtudolovesam.com/tags/photography/</link>
+      <pubDate>Thu, 04 Feb 2021 16:56:47 +0600</pubDate>
+      
+      <guid>yangtudolovesam.com/tags/photography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Alarm</title>
+      <link>yangtudolovesam.com/tags/alarm/</link>
+      <pubDate>Wed, 03 Feb 2021 16:56:47 +0600</pubDate>
+      
+      <guid>yangtudolovesam.com/tags/alarm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clock</title>
+      <link>yangtudolovesam.com/tags/clock/</link>
+      <pubDate>Wed, 03 Feb 2021 16:56:47 +0600</pubDate>
+      
+      <guid>yangtudolovesam.com/tags/clock/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Balloon</title>
+      <link>yangtudolovesam.com/tags/balloon/</link>
+      <pubDate>Tue, 02 Feb 2021 16:56:47 +0600</pubDate>
+      
+      <guid>yangtudolovesam.com/tags/balloon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gas</title>
+      <link>yangtudolovesam.com/tags/gas/</link>
+      <pubDate>Tue, 02 Feb 2021 16:56:47 +0600</pubDate>
+      
+      <guid>yangtudolovesam.com/tags/gas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Food</title>
+      <link>yangtudolovesam.com/tags/food/</link>
+      <pubDate>Mon, 25 Jan 2021 16:56:47 +0600</pubDate>
+      
+      <guid>yangtudolovesam.com/tags/food/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gold</title>
+      <link>yangtudolovesam.com/tags/gold/</link>
+      <pubDate>Mon, 25 Jan 2021 16:56:47 +0600</pubDate>
+      
+      <guid>yangtudolovesam.com/tags/gold/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
