@@ -4,7 +4,7 @@ title: "Hello Surge, Again!"
 description: "Surge 是苹果端最强的代理软件。"
 summary: "Surge 是苹果端最强的代理软件。"
 dropCap: false
-indent:  true
+indent: true
 tags:
   - surge
   - clash
@@ -12,7 +12,7 @@ tags:
 ---
 
 
-> <div align="center">**「如无必要，勿增实体。」**</div>
+> **<div align="center">「如无必要，勿增实体。」</div>**
 
 # 契机
 
