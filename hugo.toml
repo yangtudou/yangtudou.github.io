@@ -180,7 +180,6 @@ uglyURLs = false
 #               `lang-switcher`、`search`）
 
 [menu]
-    ## 菜单栏
     [[menu.main]]
         pageref = "/鱼的记忆/"
         name = "鱼的记忆"
@@ -189,7 +188,7 @@ uglyURLs = false
         # post = "archive"
     [[menu.main]]
         pageref = "/about/"
-        name = "我"
+        name = "Me"
         weight = 3
         pre = "internal"
         # post = "user-circle"
@@ -309,12 +308,12 @@ uglyURLs = false
     # 说明：用于 JSON-LD、Open Graph
 
     # 站点的描述
-    siteDescription = "但愿人长久，千里共婵娟。"
+    siteDescription = "洋san芋suo, 数字生命也许是未来。"
     # 说明：用于 HTML 的头部元数据、JSON-LD、
     #      Open Graph、Atom、RSS
 
     # 站点的创建时间
-    siteCreatedTime = "2025-12-20T20:17:43+00:00"
+    siteCreatedTime = "2021-12-20T00:00:00+00:00"
     # 注意：请保持此格式，更改数字
 
     # 站点的推特帐号
