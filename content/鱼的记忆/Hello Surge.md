@@ -2,6 +2,7 @@
 date: "2025-12-30T10:15:45+08:00"
 title: "Hello Surge, Again!"
 description: "Surge 是苹果端最强的代理软件。"
+summary: "Surge 是苹果端最强的代理软件。"
 dropCap: false
 indent:  true
 tags:
