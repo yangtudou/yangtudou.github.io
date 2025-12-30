@@ -13,7 +13,7 @@ tags:
 # 契机
 {{< quote poetry >}}
 如无必要，勿增实体。
-{{< quote poetry >}}
+{{< /quote >}}
 
 <div align="center">如无必要，勿增实体。</div>
 
