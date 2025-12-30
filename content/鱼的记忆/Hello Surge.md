@@ -12,7 +12,7 @@ tags:
 ---
 
 
-> **<center>「如无必要，勿增实体。」</center>**
+> **<div align="center" style="color: gary;">「如无必要，勿增实体。」</div>**
 
 # 契机
 
