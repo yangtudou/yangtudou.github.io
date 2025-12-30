@@ -1,6 +1,7 @@
 ---
 date: "2025-12-30T10:15:45+08:00"
 title: "Hello Surge, Again!"
+description: "Surge 是苹果端最强的代理软件。"
 dropCap: false
 indent:  true
 tags:
@@ -10,9 +11,11 @@ tags:
 ---
 
 # 契机
----
+{{< quote poetry >}}
 如无必要，勿增实体。
----
+{{< quote poetry >}}
+
+<div align="center">如无必要，勿增实体。</div>
 
 尽管买了 Surge 快两年了，但工作环境的原因一直用的都是 Clash 系的代理软件，所以也没仔细研究过怎么用这个软件。
 契机是正好快年底了，有机会折腾一下家里的 NAS 系统，研究内网穿透的时候，接触到了 Surge Ponte，
@@ -26,12 +29,15 @@ tags:
 我只是加入了一些私人化的内容，以下为逐段分析我自己用配置，仅作参考。
 具体异同，需要大家考虑自己的实际使用情况。
 
-## 全局配置 General
-```conf
-[General]
-# 日志级别
-loglevel = notify
+配置文件格式采用 `INI 格式`
 
+## 全局配置 General
+### 日志级别
+```
+loglevel = notify
+```
+
+```
 show-error-page-for-reject = true
 
 # 允许Wi-Fi访问
