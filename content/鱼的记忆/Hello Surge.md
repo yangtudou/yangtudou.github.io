@@ -1,20 +1,20 @@
 ---
-date: "2025-12-30T10:15:45+08:00"
-title: "Hello Surge, Again!"
-description: "Surge 苹果端最强的代理软件？"
-summary: ""
+title: Hello Surge, Again!
+slug: hello-surge-again
+date: 2025-12-30T10:15:45+08:00
+lastmod: 2026-01-01T00:27:14+08:00
+description:
+summary:
 dropCap: false
 indent: false
 indentFirstParagraph: true
 toc: true
 tags:
   - surge
-  - dns
   - 代理上网
 ---
 
-
-**<div align="center" style="color: gray;">「 如无必要，勿增实体。」</div>**
+**<div align="center" style="color: green;">「 如无必要，勿增实体。」</div>**
 
 
 ## 契机
@@ -36,7 +36,7 @@ tags:
 
 配置文件格式采用 `INI 格式`
 
-### [General]
+### General
 全局配置
 
 #### loglevel
@@ -75,11 +75,11 @@ udp-policy-not-supported-behaviour = REJECT
 allow-wifi-access = false
 ```
 
-### [Proxy Group]
+### Proxy Group
 策略分组
 
 
-### [Rule]
+### Rule
 分流规则
 
 
@@ -88,5 +88,4 @@ allow-wifi-access = false
 <!-- 链接统一存放 🐈 -->
 [Surge]: https://www.nssurge.com/
 [Surge Ponte]: https://kb.nssurge.com/surge-knowledge-base/zh/guidelines/ponte
-[深港有猫配置]: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Conf/Spec/Surge-EN.conf
-[Sukka]: https://blog.skk.moe/post/i-have-my-unique-dns-setup/
+[深港有猫配置]: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Conf/Spec/Surge-EN.cond
