@@ -2,9 +2,9 @@
 title: Github Action Clean
 slug: github-action-clean
 date: 2025-12-31T22:01:37+08:00
-lastmod: 2025-12-31T22:01:37+08:00
-description: 绝对是强迫症患者的福音。
-summary: 让 GitHub Action 恢复出厂般干净。
+lastmod: 2026-01-01T00:00:00+08:00
+description:
+summary:
 dropCap: false
 indent: false
 indentFirstParagraph: true
@@ -14,8 +14,9 @@ tags:
   - github action
 ---
 
+**<div align="center" style="color: gray;">绝对是强迫症患者的福音。</div>**
 
->  每次看到自己的 GitHub Action 后台一堆记录，就莫名烦躁。
+每次看到自己的 GitHub Action 后台一堆记录，就莫名烦躁。
 
 
 ## 清理 Workeflows Runs 运行记录
