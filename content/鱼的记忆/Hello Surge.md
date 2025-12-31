@@ -36,7 +36,8 @@ tags:
 
 配置文件格式采用 `INI 格式`
 
-### 全局配置 [General]
+### [General]
+全局配置
 
 #### loglevel
 日志级别: warning, notify, info, verbose (默认值: notify)
@@ -74,10 +75,12 @@ udp-policy-not-supported-behaviour = REJECT
 allow-wifi-access = false
 ```
 
-### 策略分组 [Proxy Group]
+### [Proxy Group]
+策略分组
 
 
-### 分流规则 [Rule]
+### [Rule]
+分流规则
 
 
 
