@@ -14,7 +14,9 @@ tags:
   - github action
 ---
 
+
 **<div align="center" style="color: gray;">绝对是强迫症患者的福音。</div>**
+
 
 每次看到自己的 GitHub Action 后台一堆记录，就莫名烦躁。
 
