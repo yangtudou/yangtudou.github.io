@@ -1,11 +1,11 @@
 name: 部署 Hugo 站点到 GitHub Pages
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "content/**"
+  # push:
+    # branches:
+      # - main
+    # paths:
+      # - "content/**"
 
   workflow_dispatch:
 
@@ -28,7 +28,7 @@ defaults:
 
 jobs:
   # Cleanup job
-  cleanup:
+  cleanup_deployment:
     runs-on: ubuntu-latest
     permissions: write-all
     steps:
@@ -41,7 +41,7 @@ jobs:
   # 构建任务
   build:
     runs-on: ubuntu-latest
-    needs: cleanup
+    needs: cleanup_deployment
     env:
       HUGO_VERSION: 0.153.4
     steps:
@@ -80,8 +80,7 @@ jobs:
         with:
           path: ./public
 
-  # Deployment job
-  deploy:
+  deploy_pages:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -91,3 +90,15 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  clean_workflow:
+    runs-on: ubuntu-latest
+    needs: deploy_pages
+    steps:
+      - name: clean_workflow
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          retain_days: 0
+          keep_minimum_runs: 0
+          repository: ${{ github.repository }}
+
