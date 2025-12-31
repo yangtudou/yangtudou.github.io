@@ -188,7 +188,7 @@ uglyURLs = false
         # post = "archive"
     [[menu.main]]
         pageref = "/about/"
-        name = "Me"
+        name = "朝露"
         weight = 3
         pre = "internal"
         # post = "user-circle"
@@ -295,7 +295,7 @@ uglyURLs = false
     homeLinksDelimiter = ""
 
     ## 「文章摘要」
-    enableHideInHomepage = false
+    enableHideInHomepage = true
     # 说明：激活 `hideInHomepage` front matter
     #      的支持（性能原因默认关闭）
 
@@ -510,7 +510,7 @@ uglyURLs = false
 
     jsonLD = true
     openGraph = true
-    twitterCards = true
+    twitterCards = false
     # 注意：如果你设置 twitterCards 为 `true`，
     #      请务必开启 openGraph。否则，网页的
     #      Twitter Cards 信息将会不完整。
@@ -1013,7 +1013,7 @@ uglyURLs = false
     enableParagraphIndent = true
 
     # 是否缩进第一段（全局设置）
-    indentFirstParagraph = false
+    indentFirstParagraph = true
     # 说明：文章的 Front Matter 中的 `indentFirstParagraph`
     #      的优先级高于此处
 
@@ -1265,7 +1265,7 @@ uglyURLs = false
     displaySiteCreatedYear = true
 
     # 年份与作者之间的图标，留空（""）则无
-    iconBetweenYearAndAuthor = "heart"
+    iconBetweenYearAndAuthor = ""
     # 图标颜色
     iconColor = "#f06292"
     # 是否开启图标的跳动效果
@@ -1461,7 +1461,7 @@ uglyURLs = false
         # 座右铭或简介
         motto = "时间就是最具大的谎"
         # 头像
-        avatar = "/icons/apple-touch-icon.png"
+        avatar = ""
         # 网站（默认值：baseURL）
         website = ""
         # 推特
