@@ -1,6 +1,8 @@
 name = "yangtudou"
 link = "https://yangtudou.github.io"
 email = "676683117@qq.com"
+gravatarEmail = "676683117@qq.com"
 avatar = "/images/authors/yangtudou.jpeg"
+
 [zh-cn]
     name = "洋san芋"
