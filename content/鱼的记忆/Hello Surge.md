@@ -4,7 +4,7 @@ subtitle: 重拾 Surge
 slug: hello-surge-again
 date: 2025-12-30T10:15:45+08:00
 lastmod: 2026-01-01T00:27:14+08:00
-featuredImage: "/images/posts/github-action-clean.jpg"
+featuredImage: "/images/posts/IMG_0479.png"
 enableLastMod: true
 authors:
   - yangtudou
