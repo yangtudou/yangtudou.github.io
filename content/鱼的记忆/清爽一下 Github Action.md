@@ -4,7 +4,11 @@ slug: github-action-clean
 date: 2025-12-31T22:01:37+08:00
 lastmod: 2026-01-01T00:00:00+08:00
 description:
-summary:
+featuredImage: "/images/posts/github-action-clean.jpg"
+authors:
+  - yangtudou
+categories:
+  - github action
 dropCap: false
 indent: false
 indentFirstParagraph: true
@@ -15,8 +19,8 @@ tags:
 ---
 
 
-**<div align="center" style="color: gray;">绝对是强迫症患者的福音。</div>**
-
+绝对是强迫症患者的福音。
+<!--more-->
 
 每次看到自己的 GitHub Action 后台一堆记录，就莫名烦躁。
 

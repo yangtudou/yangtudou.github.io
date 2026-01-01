@@ -1,8 +1,13 @@
 ---
 title: Hello Surge, Again!
+subtitle: 重拾 Surge
 slug: hello-surge-again
 date: 2025-12-30T10:15:45+08:00
 lastmod: 2026-01-01T00:27:14+08:00
+featuredImage: "/images/posts/github-action-clean.jpg"
+enableLastMod: true
+authors:
+  - yangtudou
 description:
 summary:
 dropCap: false
@@ -14,8 +19,8 @@ tags:
   - 代理上网
 ---
 
-**<div align="center" style="color: green;">「 如无必要，勿增实体。」</div>**
-
+「 如无必要，勿增实体。」
+<!--more-->
 
 ## 契机
 
@@ -32,7 +37,9 @@ tags:
 现在我用的配置在[**深港有猫配置**][深港有猫配置]基础上做了修改，当然他的配置很棒，注释写的很详细。
 我只是加入了一些私人化的内容，以下为逐段分析我自己用配置，仅作参考。
 具体异同，需要大家考虑自己的实际使用情况。
-**当前配置仅在 ios Surge5 上使用过。**
+
+> [!NOTE]
+> 当前配置仅在 ios Surge5 上使用过。
 
 配置文件格式采用 `INI 格式`
 
@@ -41,7 +48,7 @@ tags:
 
 #### loglevel
 日志级别: warning, notify, info, verbose (默认值: notify)
-```
+```conf
 loglevel = notify
 ```
 
@@ -81,7 +88,6 @@ allow-wifi-access = false
 
 ### Rule
 分流规则
-
 
 
 
