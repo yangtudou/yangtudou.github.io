@@ -1,6 +1,9 @@
 [submodule "themes/meme"]
 	path = themes/meme
 	url = https://github.com/reuixiy/hugo-theme-meme.git
-[submodule "themes/hugo-theme-y3say"]
-	path = themes/hugo-theme-y3say
+[submodule "themes/y3say"]
+	path = themes/y3say
 	url = https://github.com/yangtudou/hugo-theme-y3say.git
+[submodule "themes/DoIt"]
+	path = themes/DoIt
+	url = https://github.com/HEIGE-PCloud/DoIt.git
