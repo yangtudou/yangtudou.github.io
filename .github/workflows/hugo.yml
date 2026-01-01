@@ -74,6 +74,8 @@ jobs:
         run: |
           hugo \
             --minify \
+            # 指定一下配置
+            --config hugo-DoIt.toml \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
