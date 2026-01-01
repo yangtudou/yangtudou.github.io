@@ -72,11 +72,13 @@ jobs:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
         run: |
-          hugo \
-            --minify \
+          ls
+          pwd
+          # hugo \
+            # --minify \
             # 指定一下配置
-            --config $HUGO_CACHEDIR/hugo-DoIt.toml \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            # --config $HUGO_CACHEDIR/hugo-DoIt.toml \
+            # --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
