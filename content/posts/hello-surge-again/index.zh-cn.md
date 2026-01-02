@@ -3,14 +3,18 @@ title: Hello Surge, Again!
 subtitle: 「 如无必要，勿增实体。」
 date: 2025-12-30T10:15:45+08:00
 lastmod: 2026-01-02T00:01:26+08:00
-featuredImage: "surge.png"
+draft: false
+featuredImagePreview: "surge.png"
 
 authors:
   - yangtudou
 description:
 tags:
   - surge
+series:
   - 代理上网
+series_weight: 1
+seriesNavigation: true
 ---
 
 时隔将近三年，我又重新用回 Surge。
