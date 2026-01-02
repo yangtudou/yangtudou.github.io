@@ -8,7 +8,7 @@ languageCode = "zh-CN"
 hasCJKLanguage = true
 
 # 网站标题
-title = "洋san芋suo"
+title = "y3say"
 
 # 是否使用 robots.txt
 enableRobotsTXT = true
@@ -21,7 +21,7 @@ theme = "DoIt"
 
 [params]
   # DoIt 主题版本
-  version = "0.2.14"
+  version = "0.2.15"
   defaultTheme = "auto"
   [params.footer]
     enable = true
