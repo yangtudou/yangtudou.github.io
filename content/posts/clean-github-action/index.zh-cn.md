@@ -14,8 +14,8 @@ tags:
   - github action
 
 series: github
-series_weight: 0
-seriesNavigation: true
+# series_weight: 0
+# seriesNavigation: true
 ---
 
 
