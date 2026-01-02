@@ -3,23 +3,22 @@ title: Hello Surge, Again!
 subtitle: 「 如无必要，勿增实体。」
 slug: hello-surge-again
 date: 2025-12-30T10:15:45+08:00
-lastmod: 2026-01-01T00:27:14+08:00
+lastmod: 2026-01-02T00:01:26+08:00
 featuredImage: "/images/posts/IMG_0479.png"
 
 authors:
   - yangtudou
 description:
-summary:
 tags:
   - surge
   - 代理上网
 ---
 
-时隔将近三年，我又重新用回 Surge，反而发现 Surge 的好。
+时隔将近三年，我又重新用回 Surge。
+发现 Surge 的很多优点，以后会和 Clash 系配合着使用。
 <!--more-->
 
 ## 契机
-
 尽管买了 [Surge][Surge] 快两年了，但工作环境的原因一直用的都是 Clash 系的代理软件，所以也没仔细研究过怎么用这个软件。
 契机是正好快年底了，有机会折腾一下家里的 NAS 系统，研究内网穿透的时候，接触到了 [Surge Ponte][Surge Ponte]，
 原以为 Surge Ponte  一定要 MacOS，那就又要交一笔费用了。
@@ -29,7 +28,6 @@ tags:
 
 
 ## 配置
-
 现在我用的配置在[**深港有猫配置**][深港有猫配置]基础上做了修改，当然他的配置很棒，注释写的很详细。
 我只是加入了一些私人化的内容，以下为逐段分析我自己用配置，仅作参考。
 具体异同，需要大家考虑自己的实际使用情况。
@@ -40,8 +38,6 @@ tags:
 > 当前配置仅在 ios Surge5 上使用过。
 
 ### [General]^(全局配置)
-全局配置
-
 #### loglevel
 日志级别: warning, notify, info, verbose (默认值: notify)
 ```conf
@@ -78,12 +74,8 @@ udp-policy-not-supported-behaviour = REJECT
 allow-wifi-access = false
 ```
 
-### Proxy Group
-策略分组
-
-
-### Rule
-分流规则
+### [Proxy Group]^(策略分组)
+### [Rule]^(分流规则)
 
 
 
