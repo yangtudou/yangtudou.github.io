@@ -21,7 +21,7 @@ tags:
 
 
 ## 清理 Workeflows Runs 运行记录
-[[Mattraks/delete-workflow-runs](https://github.com/marketplace/actions/delete-workflow-runs)]^(现成的 action)
+[现成的 action]^([Mattraks/delete-workflow-runs](https://github.com/marketplace/actions/delete-workflow-runs))
 
 ### 基础用法
 ```yaml
