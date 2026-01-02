@@ -21,43 +21,25 @@ theme = "DoIt"
 
 [params]
   # DoIt 主题版本
-  version = "0.2.X"
+  version = "0.2.14"
   defaultTheme = "auto"
-
-[params.header]
-  themeChangeMode = "select"
-#   [params.header.title]
-#     logo = ""
-#     name = ""
-#     pre = ""
-#     post = ""
-#     typeit = false
-
-# 页面底部信息配置
+  dateFormat = "2012-12-12"
   [params.footer]
     enable = true
     custom = ''
     hugo = false
-    # DoIt 新增 | 0.2.14 托管服务信息 (支持 HTML 格式)
-    # <a title="Github Pages" href="https://docs.github.com/en/pages/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>
     hostedOn = '<a title="Github Pages" href="https://docs.github.com/en/pages/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>'
     copyright = true
     author = false
-    # 网站创立年份
     since = 2020
-    # ICP 备案信息, 仅在中国使用 (支持 HTML 格式)
     icp = ""
-    # 许可协议信息 (支持 HTML 格式)
     license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
   
-   [params.page]
+  [params.page]
     hiddenFromHomePage = false
     hiddenFromSearch = false
-    # DoIt 新增 | 0.2.0 是否使用 twemoji
     twemoji = true
-    # 是否使用 lightgallery
     lightgallery = true
-    # DoIt 新增 | 0.2.0 是否使用 ruby 扩展语法
     ruby = true
     # DoIt 新增 | 0.2.0 是否使用 fraction 扩展语法
     fraction = true
@@ -155,7 +137,7 @@ theme = "DoIt"
     pre = ""
     post = ""
     name = "鱼的记忆"
-    url = "/鱼的记忆/"
+    url = "/posts/"
     # 当你将鼠标悬停在此菜单链接上时, 将显示的标题
     title = ""
     weight = 1

@@ -1,18 +1,14 @@
 ---
-title: Github Action Clean
-slug: github-action-clean
+title: Clean Github Action
+subtitle: 还你 Github Action 出厂般的干净
 date: 2025-12-31T22:01:37+08:00
 lastmod: 2026-01-01T00:00:00+08:00
 description:
-featuredImage: "/images/posts/github-action-clean.jpg"
+featuredImage: "clean-github-action.jpg"
 authors:
   - yangtudou
 categories:
   - github action
-dropCap: false
-indent: false
-indentFirstParagraph: true
-toc: false
 tags:
   - github
   - github action

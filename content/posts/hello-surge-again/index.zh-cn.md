@@ -1,10 +1,9 @@
 ---
 title: Hello Surge, Again!
 subtitle: 「 如无必要，勿增实体。」
-slug: hello-surge-again
 date: 2025-12-30T10:15:45+08:00
 lastmod: 2026-01-02T00:01:26+08:00
-featuredImage: "/images/posts/IMG_0479.png"
+featuredImage: "surge.png"
 
 authors:
   - yangtudou
