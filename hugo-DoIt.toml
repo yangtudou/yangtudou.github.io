@@ -23,7 +23,6 @@ theme = "DoIt"
   # DoIt 主题版本
   version = "0.2.14"
   defaultTheme = "auto"
-  # dateFormat = "2012-12-12"
   [params.footer]
     enable = true
     custom = ''
@@ -61,11 +60,11 @@ theme = "DoIt"
     # DoIt 新增 | 0.2.13 是否在文章开头显示系列导航
     seriesNavigation = true
     # 是否启用最后修改时间
-    enableLastMod = true
+    enableLastMod = false
     # 是否启用字数统计
-    enableWordCount = true
+    enableWordCount = false
     # 是否启用阅读时间估计
-    enableReadingTime = true
+    enableReadingTime = false
     # DoIt 新增 | 0.2.13 过时文章提示
     [params.page.outdatedArticleReminder]
       enable = true
@@ -86,7 +85,7 @@ theme = "DoIt"
       # 默认展开显示的代码行数
       maxShownLines = 10
       # 是否显示代码行号
-      lineNos = true
+      lineNos = false
       # 是否开启代码换行
       wrap = false
       # 是否显示代码块标题
