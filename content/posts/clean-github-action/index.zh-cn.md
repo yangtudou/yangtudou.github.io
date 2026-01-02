@@ -15,10 +15,9 @@ tags:
 ---
 
 
-绝对是强迫症患者的福音。
-<!--more-->
-
 每次看到自己的 GitHub Action 后台一堆记录，就莫名烦躁。
+这个自动删除运行记录的 Action,绝对是强迫症患者的福音。
+<!--more-->
 
 
 ## 清理 Workeflows Runs 运行记录
@@ -29,7 +28,7 @@ tags:
 name: Delete old workflow runs
 on:
   schedule:
-    - cron: "0 0 1 * *" # Monthly at 00:00 on the 1st
+    - cron: "0 0 1 * *"
 jobs:
   delete-runs:
     runs-on: ubuntu-latest
