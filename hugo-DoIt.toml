@@ -23,7 +23,7 @@ theme = "DoIt"
   # DoIt 主题版本
   version = "0.2.14"
   defaultTheme = "auto"
-  dateFormat = "2012-12-12"
+  # dateFormat = "2012-12-12"
   [params.footer]
     enable = true
     custom = ''
