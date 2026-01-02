@@ -13,7 +13,7 @@ tags:
   - github
   - github action
 
-series: github
+# series: github
 # series_weight: 0
 # seriesNavigation: true
 ---
