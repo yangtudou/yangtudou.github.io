@@ -13,8 +13,14 @@ authors:
 categories:
   - 代理上网
 
+series:
+  - "Surge 从入门到放弃"
+
 tags:
   - surge
+  - 代理上网
+  - apple tv
+  - clash
 
 ---
 
