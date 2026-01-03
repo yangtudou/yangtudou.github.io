@@ -4,7 +4,7 @@ subtitle: 「 如无必要，勿增实体。」
 date: 2025-12-30T10:15:45+08:00
 lastmod: 2026-01-02T00:01:26+08:00
 draft: false
-featuredImagePreview: "surge.png"
+featuredImagePreview: "surge.webp"
 description:
 
 authors:
