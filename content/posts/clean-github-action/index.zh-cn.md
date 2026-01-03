@@ -4,6 +4,7 @@ subtitle: 还你 Github Action 出厂般的干净
 date: 2025-12-31T22:01:37+08:00
 lastmod: 2026-01-01T00:00:00+08:00
 description:
+featuredImage: "clean-github-action.webp"
 featuredImagePreview: "clean-github-action.webp"
 
 authors:
