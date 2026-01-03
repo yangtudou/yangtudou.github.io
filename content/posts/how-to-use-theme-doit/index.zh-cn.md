@@ -22,9 +22,9 @@ tags:
 这个主题真不错，开箱即用。[官方说明书](https://hugodoit.pages.dev/zh-cn/theme-documentation-basics/)写的很好，但涉及到一些细节的使用并没有详细说明，我这里是在**官方基础上**作出的补充，具体操作还是关注官方介绍和使用说明。
 
 ## 扩展用法
-{{< admonition warning “注意”>}}
-以下扩展也许只适用于 ToIt 主题，不具有通用性。
-{{< /admonition >}}
+> [!WARNING]
+> 以下扩展也许只适用于 ToIt 主题，不具有通用性。
+
 
 ### 标签用法
 用这两组标签 `{{< admonition >}}` & `{{< /admonition >}}`
