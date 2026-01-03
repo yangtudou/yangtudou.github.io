@@ -1,6 +1,5 @@
 ---
 title: 如何使用 Hugo Theme DoIt
-subtitle:
 date: 2026-01-02T10:31:12+08:00
 lastmod: 2026-01-03T06:00:00+08:00
 draft: false
