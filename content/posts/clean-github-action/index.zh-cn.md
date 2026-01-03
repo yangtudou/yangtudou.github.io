@@ -5,10 +5,13 @@ date: 2025-12-31T22:01:37+08:00
 lastmod: 2026-01-01T00:00:00+08:00
 description:
 featuredImagePreview: "clean-github-action.jpg"
+
 authors:
   - yangtudou
+
 categories:
   - github action
+
 tags:
   - github
   - github action
