@@ -32,7 +32,7 @@ tags:
 
 
 ## 配置
-现在我用的配置在[**深港有猫配置**][深港有猫配置]基础上做了修改，当然他的配置很棒，注释写的很详细。
+现在我用的配置是在[**深港有猫配置**][深港有猫配置]基础上做了修改，当然他的配置很棒，注释写的很详细。
 我只是加入了一些私人化的内容，以下为逐段分析我自己用配置，仅作参考。
 具体异同，需要大家考虑自己的实际使用情况。
 
@@ -44,38 +44,38 @@ tags:
 
 ### [General]^(全局配置)
 #### loglevel
-日志级别: warning, notify, info, verbose (默认值: notify)
-```conf
+日志级别: `warning`, `notify(default)`, `info`, `verbose`
+```ini
 loglevel = notify
 ```
 
 #### skip-proxy
 跳过某个域名或者 IP 段，这些目标主机将不会由 Surge Proxy 处理。
-```
+```ini
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 ```
 
 #### dns-server
 DNS 服务器, 这里之前收到过 Clash DNS 泄露影响, 在配置的时候着重研究了。具体请阅读[Sukka][Sukka]博客内容，受益良多。
-```
+```ini
 dns-server = system
 ```
 
 #### exclude-simple-hostnames
 排除简单的主机名
-```
+```ini
 exclude-simple-hostnames = true
 ```
 
 #### udp-policy-not-supported-behaviour
 UDP 退回行为
-```
+```ini
 udp-policy-not-supported-behaviour = REJECT
 ```
 
 #### allow-wifi-access
 允许 Wi-Fi 访问
-```
+```ini
 allow-wifi-access = false
 ```
 

@@ -16,7 +16,8 @@ tags:
   - github
   - github action
 
-# series: github
+# series:
+#   - github
 # series_weight: 0
 # seriesNavigation: true
 ---
@@ -28,7 +29,7 @@ tags:
 
 
 ## 清理 Workeflows Runs 运行记录
-[现成的 action]^([Mattraks/delete-workflow-runs](https://github.com/marketplace/actions/delete-workflow-runs))
+[delete-workflow-runs](https://github.com/marketplace/actions/delete-workflow-runs)
 
 ### 基础用法
 ```yaml
@@ -53,7 +54,7 @@ jobs:
 ```
 
 ## 清理 Github Pages 部署记录
-现成的 action 工作流: [strumwolf/delete-deployment-environment](https://github.com/marketplace/actions/delete-deployment-environment)
+[strumwolf/delete-deployment-environment](https://github.com/marketplace/actions/delete-deployment-environment)
 
 ### 基础用法
 ```yaml
