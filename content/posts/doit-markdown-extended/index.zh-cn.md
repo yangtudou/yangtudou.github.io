@@ -15,10 +15,9 @@ tags:
   - DoIt
 
 categories:
-  - 如何使用 hugo 主题 DoIt
 
 series:
-  - series-demo
+  - "如何使用 DoIt"
 
 hiddenFromHomePage: false
 hiddenFromSearch: false

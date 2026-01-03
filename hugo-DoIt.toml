@@ -22,9 +22,10 @@ enableEmoji = true
 # 主题
 theme = "DoIt"
 
-category = "categories"
-tag = "tags"
-series = "series"
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
 
 [params]
   # DoIt 主题版本
