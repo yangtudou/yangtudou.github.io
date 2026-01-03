@@ -12,7 +12,7 @@ description:
 tags:
   - surge
 series:
-  - 代理上网
+  - "www-proxy"
 series_weight: 1
 seriesNavigation: true
 ---
