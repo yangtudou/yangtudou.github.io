@@ -35,6 +35,9 @@ license: ""
 
 <!--more-->
 
+{{< admonition warning "使用说明" >}}
+以下扩展，也许只对 DoIt 主题生效，写入其他 MarkDown 都可能会失效。
+{{< /admonition >}}
 
 ## [标签用法]^({{</* admonition */>}})
 用这两组标签 `{{</* admonition */>}}` & `{{</* /admonition */>}}` 包裹住内容, 默认在不添加任何参数时，
