@@ -4,7 +4,7 @@ subtitle:
 date: 2026-01-02T10:31:12+08:00
 lastmod: 2026-01-02T10:31:12+08:00
 draft: false
-description: ToIt 是一个很棒的 hugo 主题。
+description: DoIt 是一个很棒的 hugo 主题，功能很全。
 
 authors:
   - yangtudou
@@ -31,11 +31,13 @@ license: ""
 <!--more-->
 
 ## 引言
-这个主题真不错，开箱即用。[官方说明书](https://hugodoit.pages.dev/zh-cn/theme-documentation-basics/)写的很好，但涉及到一些细节的使用并没有详细说明，我这里是在**官方基础上**作出的补充，具体操作还是关注官方介绍和使用说明。
+这个主题真不错，开箱即用。[官方说明书](https://hugodoit.pages.dev/zh-cn/theme-documentation-basics/)写的很好，
+但涉及到一些细节的使用并没有详细说明，我这里是在**官方基础上**作出的补充，
+具体操作还是关注官方介绍和使用说明。
 
 ## 扩展用法
 {{< admonition warning >}}
-以下扩展也许只适用于 ToIt 主题，不具有通用性。
+以下扩展也许只适用于 DoIt 主题内使用，不具有通用性。
 {{< /admonition >}}
 
 ### [标签用法]^({{</* admonition */>}})
