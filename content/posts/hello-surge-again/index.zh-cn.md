@@ -38,7 +38,7 @@ tags:
 
 配置文件格式采用 `INI 格式`
 
-{{< admonition type=tip title="注意" open=false >}}
+{{< admonition type=warning title="注意" open=false >}}
 当前配置仅在 ios Surge5 上使用过。
 {{< /admonition >}}
 
