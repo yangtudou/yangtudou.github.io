@@ -1,54 +1,51 @@
 ---
-title: 如何使用 Hugo Theme DoIt
-subtitle: 
+title: DoIt MarkDown 扩展语法-标签
+subtitle: 很多种标签可供选择
 date: 2026-01-02T10:31:12+08:00
 lastmod: 2026-01-02T10:31:12+08:00
 draft: false
-description: DoIt 是一个很棒的 hugo 主题，功能很全。
+description: "DoIt 是一个很棒的 hugo 主题，功能很全。"
 
 authors:
   - yangtudou
+
 tags:
   - hugo
+  - hugo theme
   - DoIt
+
 categories:
-  - 如何使用 DoIt
-series: []
+  - 如何使用 hugo 主题 DoIt
+
+series:
+  - series-demo
+
 hiddenFromHomePage: false
 hiddenFromSearch: false
 featuredImage: ""
-featuredImagePreview: "how-to-use-doit.webp"
+featuredImagePreview: "featuredImagePreview.webp"
 toc:
   enable: true
   auto: false
 math:
   enable: false
-lightgallery: false
+lightgallery: true
 license: ""
 ---
 
 
 <!--more-->
 
-## 引言
-这个主题真不错，开箱即用。[官方说明书](https://hugodoit.pages.dev/zh-cn/theme-documentation-basics/)写的很好，
-但涉及到一些细节的使用并没有详细说明，我这里是在**官方基础上**作出的补充，
-具体操作还是关注官方介绍和使用说明。
 
-## 扩展用法
-{{< admonition warning >}}
-以下扩展也许只适用于 DoIt 主题内使用，不具有通用性。
-{{< /admonition >}}
-
-### [标签用法]^({{</* admonition */>}})
+## [标签用法]^({{</* admonition */>}})
 用这两组标签 `{{</* admonition */>}}` & `{{</* /admonition */>}}` 包裹住内容, 默认在不添加任何参数时，
 用的是 `note` 标签,`admonition` 不可以省略。
 
-#### 第一个参数
+### 第一个参数
 | 参数名称 | 默认图标 | 默认名称 |
 | :-----: | :----: | :-----: |
-| [note]^(default) | 笔 | 注意 |
-| tip | 灯泡 | 技巧 |
+| [note]^(default) | {{< fa-icon solid pen >}} | 注意 |
+| tip | {{< fa-icon solid lightbulb >}} | 技巧 |
 | abstract |  | |
 | info |  | |
 | success |  | |
@@ -60,12 +57,13 @@ license: ""
 | quote |  | |
 | example |  | |
 
-#### 第二个参数
+### 第二个参数
 可以不添加，作用是更改默认 title
 
-#### 示例用法
+### 示例用法
 可以根据样式，直接复制代码来使用。
 
+#### note
 <!-- note 默认标签 -->
 ```markdown
 {{</* admonition note */>}}
@@ -77,6 +75,7 @@ license: ""
 这是一个默认标签，note！
 {{< /admonition >}}
 
+#### warning
 <!-- warning 标签 -->
 ```markdown
 {{</* admonition warning */>}}
@@ -88,6 +87,7 @@ license: ""
 这是 warning 标签。
 {{< /admonition >}}
 
+#### tip
 <!-- tip 标签 -->
 ```markdown
 {{</* admonition tip */>}}
@@ -99,6 +99,7 @@ license: ""
 这是 tip 标签。
 {{< /admonition >}}
 
+#### abstract
 <!-- abstract 标签 -->
 ```markdown
 {{</* admonition abstract */>}}
@@ -110,6 +111,7 @@ license: ""
 这是 abstract 标签。
 {{< /admonition >}}
 
+#### info
 <!-- info 标签 -->
 ```markdown
 {{</* admonition info */>}}
@@ -121,6 +123,7 @@ license: ""
 这是 info 标签。
 {{< /admonition >}}
 
+#### success
 <!-- success 标签 -->
 ```markdown
 {{</* admonition success */>}}
@@ -132,6 +135,7 @@ license: ""
 这是 success 标签。
 {{< /admonition >}}
 
+#### question
 <!-- question 标签 -->
 ```markdown
 {{</* admonition question */>}}
@@ -143,6 +147,7 @@ license: ""
 这是 question 标签。
 {{< /admonition >}}
 
+#### failure
 <!-- failure 标签 -->
 ```markdown
 {{</* admonition failure */>}}
@@ -154,6 +159,7 @@ license: ""
 这是 failure 标签。
 {{< /admonition >}}
 
+#### danger
 <!-- danger 标签 -->
 ```markdown
 {{</* admonition danger */>}}
@@ -165,6 +171,7 @@ license: ""
 这是 danger 标签。
 {{< /admonition >}}
 
+#### bug
 <!-- bug 标签 -->
 ```markdown
 {{</* admonition bug */>}}
@@ -176,6 +183,7 @@ license: ""
 这是 bug 标签。
 {{< /admonition >}}
 
+#### quote
 <!-- quote 标签 -->
 ```markdown
 {{</* admonition quote */>}}
@@ -187,6 +195,7 @@ license: ""
 这是 quote 标签。
 {{< /admonition >}}
 
+#### example
 <!-- example 标签 -->
 ```markdown
 {{</* admonition example */>}}
@@ -197,15 +206,3 @@ license: ""
 {{< admonition example >}}
 这是 example 标签。
 {{< /admonition >}}
-
-### 样式扩展
-
-```markdown
-{{</* style "color: green;text-align: center;" */>}}
-这是一段绿色的居中文字。
-{{</* /style */>}}
-```
-
-{{< style "color: green;text-align: center;" >}}
-这是一段绿色的居中文字。
-{{< /style >}}

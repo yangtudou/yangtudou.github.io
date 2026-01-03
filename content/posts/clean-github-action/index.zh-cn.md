@@ -1,4 +1,5 @@
 ---
+weight:
 title: Clean Github Action
 subtitle: 还你 Github Action 出厂般的干净
 date: 2025-12-31T22:01:37+08:00
