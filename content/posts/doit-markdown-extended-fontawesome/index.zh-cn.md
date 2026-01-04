@@ -13,6 +13,7 @@ tags:
   - hugo
   - hugo theme
   - DoIt
+  - Font Awesome
 
 categories:
 
@@ -38,3 +39,9 @@ license: ""
 {{< admonition warning "使用说明" >}}
 以下扩展，也许只对 DoIt 主题生效，写入其他 MarkDown 都可能会失效。
 {{< /admonition >}}
+
+## {{< fa-icon brands font-awesome >}}[Font Awesome 图标]^({{</* fa-icon brands font-awesome */>}})用法
+
+短码如下 `{{</* fa-icon 类名 名称 */>}}`，所有参数都必须要填写。
+
+类名 & 名称 需要去 [Font Awesome 官方网站](https://fontawesome.com/)  找到需要的图标样式。
