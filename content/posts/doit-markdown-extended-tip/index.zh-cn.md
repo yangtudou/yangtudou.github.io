@@ -22,7 +22,7 @@ series:
 hiddenFromHomePage: false
 hiddenFromSearch: false
 featuredImage: ""
-featuredImagePreview: "featuredImagePreview.webp"
+featuredImagePreview: "/images/posts/DefaultfeaturedImagePreview.webp"
 toc:
   enable: true
   auto: false
