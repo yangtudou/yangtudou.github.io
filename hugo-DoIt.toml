@@ -10,8 +10,8 @@ hasCJKLanguage = true
 # 网站标题
 title = "洋san芋suo"
 
-
-
+# 构建前清除 public 内容
+# cleanDestinationDir = true
 
 # 是否使用 robots.txt
 enableRobotsTXT = true

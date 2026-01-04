@@ -10,9 +10,7 @@ authors:
   - yangtudou
 
 tags:
-  - hugo
   - hugo theme
-  - DoIt
   - Font Awesome
 
 categories:
