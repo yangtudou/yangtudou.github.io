@@ -1,6 +1,8 @@
+.DS_Store
 .hugo_build.lock
 .DS_Store
 /assets/jsconfig.json
 /public
 /resources
-.DS_Store
+content/.obsidian
+
