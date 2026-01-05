@@ -1,0 +1,10 @@
+name = "洋san芋"
+link = "https://yangtudou.github.io"
+email = "676683117@qq.com"
+# 受到网络环境影响 gravatar
+# 还是自己指定资源
+# gravatarEmail = "676683117@qq.com"
+avatar = "/images/authors/yangtudou.webp"
+
+[en]
+    name = "yangtudou"

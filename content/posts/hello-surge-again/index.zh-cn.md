@@ -8,7 +8,7 @@ featuredImagePreview: "surge.webp"
 description:
 
 authors:
-  - yangtudou
+  - "洋san芋"
 
 categories:
   - 代理上网

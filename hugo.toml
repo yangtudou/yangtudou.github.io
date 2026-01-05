@@ -26,6 +26,7 @@ theme = "DoIt"
   category = "categories"
   tag = "tags"
   series = "series"
+  authors = "authors"
 
 [params]
   # DoIt 主题版本

@@ -9,7 +9,7 @@ featuredImage: "clean-github-action.webp"
 featuredImagePreview: "clean-github-action.webp"
 
 authors:
-  - yangtudou
+  - "洋san芋"
 
 categories:
   - github action

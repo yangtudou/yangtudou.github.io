@@ -7,7 +7,7 @@ draft: false
 description: "DoIt 是一个很棒的 hugo 主题，功能很全。"
 
 authors:
-  - yangtudou
+  - "洋san芋"
 
 tags:
   - hugo theme
@@ -38,7 +38,7 @@ license: ""
 以下扩展，也许只对 DoIt 主题生效，写入其他 MarkDown 都可能会失效。
 {{< /admonition >}}
 
-## {{< fa-icon brands font-awesome >}}[Font Awesome 图标]^({{</* fa-icon brands font-awesome */>}})用法
+## [Font Awesome 图标]^({{</* fa-icon brands font-awesome */>}})用法
 
 短码如下 `{{</* fa-icon 类名 名称 */>}}`，所有参数都必须要填写。
 

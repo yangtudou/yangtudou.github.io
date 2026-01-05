@@ -7,7 +7,7 @@ draft: false
 description: "DoIt 是一个很棒的 hugo 主题，功能很全。"
 
 authors:
-  - yangtudou
+  - "洋san芋"
 
 tags:
   - hugo
