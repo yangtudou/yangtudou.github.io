@@ -72,7 +72,7 @@ jobs:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
         run: |
-          hugo --minify --config hugo-DoIt.toml \
+          hugo --minify --config hugo.toml \
           --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
