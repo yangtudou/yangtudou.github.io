@@ -22,7 +22,7 @@ series:
 hiddenFromHomePage: false
 hiddenFromSearch: false
 featuredImage: ""
-featuredImagePreview: "/images/posts/DefaultfeaturedImagePreview.webp"
+featuredImagePreview: "doit-markdown-extended-tip.webp"
 toc:
   enable: true
   auto: false

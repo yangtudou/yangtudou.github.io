@@ -4,5 +4,7 @@
 /assets/jsconfig.json
 /public
 /resources
-content/.obsidian
+/content/.obsidian
 
+/assets/css/style.scss
+/layouts

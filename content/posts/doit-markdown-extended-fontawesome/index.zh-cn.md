@@ -4,7 +4,7 @@ subtitle: 方便快捷的添加图标，让 MarkDown 看起来更舒服。
 date: 2026-01-04T03:35:00+08:00
 lastmod: 2026-01-04T03:35:00+08:00
 draft: false
-description: "DoIt 是一个很棒的 hugo 主题，功能很全。"
+description: ""
 
 authors:
   - "洋san芋"
@@ -21,7 +21,7 @@ series:
 hiddenFromHomePage: false
 hiddenFromSearch: false
 featuredImage: ""
-featuredImagePreview: "/images/posts/DefaultfeaturedImagePreview.webp"
+featuredImagePreview: "doit-markdown-extended-fontawesome.webp"
 toc:
   enable: true
   auto: false
@@ -31,7 +31,7 @@ lightgallery: true
 license: ""
 ---
 
-
+DoIt 是一个很棒的 hugo 主题，功能很全。{{< fa-icon solid cat >}}
 <!--more-->
 
 {{< admonition warning "使用说明" >}}

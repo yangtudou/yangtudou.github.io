@@ -5,8 +5,20 @@
 
 
 .header-wrapper {
-  .header-title a {
-    //color: #212121;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  .header-title {
+    font-family: $header-title-font-family;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    min-width: 10%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    //@include flex(10);
   }
 }
 
@@ -39,7 +51,39 @@ a, button {
 	}
 	
 	.post-meta-line .author {
-	  //font-size: 0.875rem;
+	  font-size: 1.05rem;
 	}
+  }
+}
+
+/* 渲染 markdownwn 的 css */
+
+.single {
+  .content {
+    > h2, > h3, > h4, > h5, > h6 {
+      > .header-mark {
+        &::before {
+          content: "";
+          margin-right: 0;
+        }
+      }
+    }
+    ul, ol {
+      padding-left: 0.85rem;
+    }
+  }
+}
+
+
+
+
+
+/* Theme dark */
+
+html.dark {
+  .header-wrapper {
+    .header-title a {
+      color: #ffffff;
+    }
   }
 }

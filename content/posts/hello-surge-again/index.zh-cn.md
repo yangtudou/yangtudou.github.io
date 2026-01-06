@@ -14,7 +14,7 @@ categories:
   - 代理上网
 
 series:
-  - "Surge 从入门到放弃"
+  - "Surge 使用指南"
 
 tags:
   - surge
