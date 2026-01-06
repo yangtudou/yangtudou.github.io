@@ -1,0 +1,45 @@
+// ==============================
+// Custom style
+// 自定义样式
+// ==============================
+
+
+.header-wrapper {
+  .header-title a {
+    //color: #212121;
+  }
+}
+
+
+
+a, button {
+  //color: #27AE60;
+  transition: color 0.3s ease-in-out;
+  &:hover {
+    color: #1B5E20;
+  }
+}
+
+.home[posts] {
+  .summary {
+    border-bottom: none;
+    
+    .featured-image-preview {
+      padding: 50% 0 0;
+    }
+  }
+}
+
+.single {
+  .post-meta {
+    font-size: 1.05rem;
+	
+	.post-meta-line time {
+	  font-size: 0.875rem;
+	}
+	
+	.post-meta-line .author {
+	  //font-size: 0.875rem;
+	}
+  }
+}
