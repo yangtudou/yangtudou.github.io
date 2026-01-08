@@ -1,18 +1,11 @@
+# MacOs
 .DS_Store
+
+# Hugo dev
 .hugo_build.lock
 /assets/jsconfig.json
 /public
 /resources
-/content/.obsidian
 
-# 修改主题用
-# 仅在本地生效
-# 在没完全调试完前
-# 请不要删除以下内容
-/assets/css/style.scss
-/assets/data
-/assets/js
-/assets/lib
-/static/lib
-/assets/svg
-/layouts
+# obsidian 作为编辑器的话
+/content/.obsidian

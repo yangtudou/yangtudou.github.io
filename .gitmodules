@@ -1,6 +1,3 @@
-[submodule "themes/y3say"]
-	path = themes/y3say
-	url = https://github.com/yangtudou/hugo-theme-y3say.git
 [submodule "themes/DoIt"]
 	path = themes/DoIt
 	url = https://github.com/HEIGE-PCloud/DoIt.git
