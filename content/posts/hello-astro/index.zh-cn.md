@@ -3,7 +3,7 @@ title: "Hello Astro!"
 subtitle: ""
 date: "2026-01-08T00:00:00+08:00"
 lastmod: "2026-01-08T00:00:00+08:00"
-draft: true
+draft: false
 description: Astro 帮助开创并推广了一种新的前端架构模式，称为 群岛架构。
 authors: ["洋san芋"]
 tags: ["astro"]
