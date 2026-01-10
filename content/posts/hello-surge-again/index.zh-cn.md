@@ -44,9 +44,8 @@ tags:
 
 配置文件格式采用 `INI 格式`
 
-{{< admonition type=warning title="注意" open=false >}}
-当前配置仅在 ios Surge5 上使用过。
-{{< /admonition >}}
+> [!WARNING]
+> 当前配置仅在 ios Surge5 上使用过。
 
 ### [General]^(全局配置)
 #### loglevel
