@@ -1,0 +1,762 @@
+/* ==========================================================================
+   Markdown Content Styles - 文学设计版
+   - 衬线字体系统
+   - 中式极简排版美学
+   - 完整的暗色模式支持
+   ========================================================================== */
+
+/* --- 字体引入 --- */
+/* 霞鹜文楷 - 优雅的手写楷体（用于引用） */
+@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css');
+
+/* 思源黑体 - 现代无衬线（主力字体） */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
+
+/* 英文无衬线字体 - 优雅现代 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* 代码等宽字体 - 带连字支持 */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+
+/* --- CSS 变量定义 --- */
+.markdown-content {
+  /* 字体系统 */
+  --font-body: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Inter', -apple-system, system-ui, sans-serif;
+  --font-heading: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Inter', system-ui, sans-serif;
+  --font-quote: 'LXGW WenKai', 'Noto Sans SC', 'Kaiti SC', 'STKaiti', Georgia, serif;
+  --font-code: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, Monaco, 'Courier New', monospace;
+  
+  /* 颜色系统 */
+  --text-primary: #2d2d2d;
+  --text-secondary: #5a5a5a;
+  --text-muted: #888888;
+  --heading-color: #1a1a1a;
+  
+  --border-light: rgba(0, 0, 0, 0.08);
+  --border-medium: rgba(0, 0, 0, 0.12);
+  
+  --code-bg: #fafaf8;
+  --code-inline-bg: rgba(100, 80, 60, 0.08);
+  --code-inline-color: #c7254e;
+  
+  --blockquote-bg: rgba(245, 240, 230, 0.4);
+  --blockquote-border: rgba(139, 116, 88, 0.3);
+  
+  --link-color: #8b5e3c;
+  --link-hover: #6b4423;
+  
+  /* 间距系统 */
+  --spacing-xs: 0.4rem;
+  --spacing-sm: 0.8rem;
+  --spacing-md: 1.8rem;
+  --spacing-lg: 2.8rem;
+  --spacing-xl: 3.5rem;
+}
+
+/* 暗色模式变量覆盖 - 活泼明亮配色 */
+html.dark .markdown-content {
+  --text-primary: #eceae7;
+  --text-secondary: #c2bfbc;
+  --text-muted: #9a9794;
+  --heading-color: #fafaf9;
+  
+  --border-light: rgba(255, 255, 255, 0.14);
+  --border-medium: rgba(255, 255, 255, 0.2);
+  
+  --code-bg: #1c1c1e;
+  --code-inline-bg: rgba(139, 92, 246, 0.18);
+  --code-inline-color: #d8b4fe;
+  
+  --blockquote-bg: rgba(139, 92, 246, 0.1);
+  --blockquote-border: rgba(167, 139, 250, 0.5);
+  
+  --link-color: #c4b5fd;
+  --link-hover: #e9d5ff;
+}
+
+
+/* ==========================================================================
+   基础排版 - 文学感优化
+   ========================================================================== */
+
+.markdown-content {
+  /* 两侧对齐，提升阅读体验 */
+  text-align: justify;
+  text-justify: inter-character;
+  text-align-last: left; /* 最后一行左对齐 */
+  
+  word-break: break-word;
+  line-break: strict; /* 严格避头尾 */
+  
+  font-size: 17px; /* 衬线字体略大更舒适 */
+  line-height: 1.9; /* 更宽松的行高 */
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  
+  /* 字体渲染优化 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* 段落 */
+.markdown-content p {
+  margin: var(--spacing-md) 0;
+  text-indent: 0;
+}
+
+
+/* ==========================================================================
+   标题系统 - 宋体感
+   ========================================================================== */
+
+.markdown-content :where(h1, h2, h3, h4, h5, h6) {
+  color: var(--heading-color);
+  font-weight: 600;
+  line-height: 1.4;
+  /* margin-top: 2.8em; */
+  /* margin-bottom: 1.2em; */
+  /* text-wrap: balance; */
+  text-wrap: wrap;
+  scroll-margin-top: 2rem;
+  font-family: var(--font-heading);
+  letter-spacing: 0.05em; /* 标题字距略宽 */
+}
+
+.markdown-content h1 { 
+  font-size: 2.4rem; 
+  /* border-bottom: 2px solid var(--border-light); */
+  padding-bottom: 0.4em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.markdown-content h2 { 
+  font-size: 1.9rem; 
+  /* border-bottom: 1px solid var(--border-light); */
+  padding-bottom: 0.3em;
+  font-weight: 600;
+}
+
+.markdown-content h3 { 
+  font-size: 1.55rem;
+  font-weight: 600;
+}
+
+.markdown-content h4 { 
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.markdown-content h5 { 
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.markdown-content h6 { 
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+/* 标题后紧跟段落的间距优化 */
+.markdown-content :where(h1, h2, h3, h4, h5, h6) + p {
+  margin-top: var(--spacing-sm);
+}
+
+
+/* ==========================================================================
+   列表排版 - 优雅间距
+   ========================================================================== */
+
+.markdown-content ul,
+.markdown-content ol {
+  margin: var(--spacing-md) 0;
+  padding-left: 2rem;
+}
+
+.markdown-content li {
+  margin: var(--spacing-sm) 0;
+  padding-left: 0.3rem;
+  line-height: 1.8;
+}
+
+.markdown-content ul { 
+  list-style-type: disc; 
+}
+
+.markdown-content ol { 
+  list-style-type: decimal; 
+}
+
+/* 列表符号颜色 */
+.markdown-content ::marker {
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+/* 嵌套列表 */
+.markdown-content li > ul, 
+.markdown-content li > ol {
+  margin-top: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
+}
+
+
+/* ==========================================================================
+   代码块系统 - 现代协调设计
+   ========================================================================== */
+
+/* 代码块容器 */
+.markdown-content pre {
+  position: relative;
+  margin: var(--spacing-lg) 0;
+  padding: 0 !important;
+  border-radius: 12px;
+  background-color: var(--code-bg) !important;
+  border: 1px solid var(--border-light);
+  overflow: visible !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* 代码内容 */
+.markdown-content pre code {
+  display: block;
+  padding: 3.2rem 1.5rem 1.5rem !important; /* 顶部留出空间给语言标签和装饰条 */
+  overflow-x: auto;
+  border-radius: 12px;
+  word-wrap: normal;
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
+  font-family: var(--font-code);
+  font-size: 0.9em;
+  line-height: 1.7;
+  font-weight: 450;
+  letter-spacing: -0.01em;
+}
+
+html.dark .markdown-content pre code {
+  color: #e6edf3 !important;
+}
+
+/* 代码块语言标签 */
+.markdown-content pre[data-language]::before {
+  content: attr(data-language);
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  font-size: 0.7rem;
+  font-family: var(--font-code);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  z-index: 2;
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+/* 复制按钮容器 - 与代码内容顶部对齐 */
+.markdown-content .copy-btn {
+  position: absolute;
+  top: 10px; /* 与语言标签相同位置 */
+  right: 16px;
+  z-index: 20;
+}
+
+/* 复制按钮样式 - 与引用块协调 */
+.markdown-content .copy-btn button {
+  width: 28px; /* 缩小按钮 */
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.25); /* 更淡的背景 */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.04); /* 更淡的边框 */
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02); /* 更淡的阴影 */
+}
+
+/* 按钮内图标大小调整 */
+.markdown-content .copy-btn button svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* 桌面端：默认隐藏，悬停显示 + hover 效果 */
+@media (min-width: 1024px) {
+  .markdown-content .copy-btn button { 
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .markdown-content pre:hover .copy-btn button { 
+    opacity: 1; 
+  }
+  
+  .markdown-content .copy-btn button:hover {
+    background: rgba(255, 255, 255, 0.6); /* 悬停时稍微实一点 */
+    transform: scale(1.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  }
+  
+  .markdown-content .copy-btn button:active {
+    transform: scale(0.95);
+  }
+}
+
+/* 暗色模式优化 */
+html.dark .markdown-content .copy-btn button {
+  background: rgba(60, 55, 70, 0.3); /* 更淡的暗色背景 */
+  border-color: rgba(167, 139, 250, 0.15);
+  color: #e9d5ff;
+}
+
+/* 暗色模式下的 hover（仅桌面端） */
+@media (min-width: 1024px) {
+  html.dark .markdown-content .copy-btn button:hover {
+    background: rgba(75, 65, 90, 0.6);
+    border-color: rgba(167, 139, 250, 0.3);
+    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3);
+  }
+}
+
+html.dark .markdown-content pre {
+  box-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(167, 139, 250, 0.1);
+}
+
+html.dark .markdown-content pre::before {
+  background: linear-gradient(
+    to bottom,
+    rgba(167, 139, 250, 0.05),
+    transparent
+  );
+}
+
+/* 暗色模式下的语言标签 */
+html.dark .markdown-content pre[data-language]::before {
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+
+/* ==========================================================================
+   行内代码 - 温和色调
+   ========================================================================== */
+
+.markdown-content :not(pre) > code {
+  font-family: var(--font-code);
+  font-size: 0.86em;
+  background: var(--code-inline-bg);
+  color: var(--code-inline-color);
+  padding: 0.2em 0.45em;
+  margin: 0 0.15em;
+  border-radius: 4px;
+  border: 1px solid var(--border-light);
+  vertical-align: baseline;
+  font-weight: 400;
+}
+
+
+/* ==========================================================================
+   引用块 - 现代简约风格
+   ========================================================================== */
+
+.markdown-content blockquote {
+  margin: var(--spacing-lg) 0;
+  padding: 1.4rem 1.6rem;
+  border-left: 3px solid var(--blockquote-border);
+  background-color: var(--blockquote-bg);
+  border-radius: 0 10px 10px 0;
+  position: relative;
+  font-family: var(--font-quote);
+  box-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.04),
+    0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+/* 装饰性引号 - 更轻盈 */
+.markdown-content blockquote::before {
+  content: "\201C";
+  position: absolute;
+  top: 0.5rem;
+  left: 0.8rem;
+  font-size: 2rem;
+  font-family: Georgia, serif;
+  color: var(--blockquote-border);
+  opacity: 0.2;
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* 引用内文字 */
+.markdown-content blockquote p {
+  margin: var(--spacing-sm) 0;
+  line-height: 1.85;
+  font-weight: 400;
+  color: var(--text-secondary);
+  font-size: 0.96em;
+  text-indent: 0;
+}
+
+/* 引用内的第一段 */
+.markdown-content blockquote p:first-child {
+  margin-top: 0;
+}
+
+/* 引用内的最后一段 */
+.markdown-content blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ==========================================================================
+   链接 - 书法感
+   ========================================================================== */
+
+.markdown-content a {
+  color: var(--link-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 500;
+}
+
+.markdown-content a:hover {
+  color: var(--link-hover);
+  border-bottom-color: var(--link-color);
+}
+
+/* 标题内的链接 */
+.markdown-content :where(h1, h2, h3, h4, h5, h6) a {
+  border-bottom: none;
+  font-weight: inherit;
+}
+
+.markdown-content :where(h1, h2, h3, h4, h5, h6) a:hover {
+  opacity: 0.75;
+}
+
+
+/* ==========================================================================
+   图片系统 - 艺术感
+   ========================================================================== */
+
+.markdown-content img {
+  max-width: 100%;
+  height: auto !important;
+  border-radius: 8px;
+  margin: var(--spacing-xl) auto;
+  display: block;
+  cursor: zoom-in;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+/* 图片悬停效果 - 仅桌面端 */
+@media (min-width: 1024px) {
+  .markdown-content img {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .markdown-content img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+}
+
+/* Figure 元素 */
+.markdown-content figure {
+  margin: var(--spacing-xl) 0;
+  width: 100%;
+}
+
+.markdown-content figcaption {
+  text-align: center;
+  font-size: 0.88em;
+  margin-top: 1rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  font-family: var(--font-quote);
+  letter-spacing: 0.02em;
+}
+
+
+/* ==========================================================================
+   表格 - 简约线条
+   ========================================================================== */
+
+.markdown-content table {
+  width: 100%;
+  margin: var(--spacing-lg) 0;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  font-size: 0.95em;
+}
+
+.markdown-content th,
+.markdown-content td {
+  padding: 0.85rem 1.2rem;
+  border: 1px solid var(--border-light);
+  text-align: left;
+}
+
+.markdown-content th {
+  background: var(--blockquote-bg);
+  font-weight: 600;
+  color: var(--heading-color);
+  font-family: var(--font-heading);
+  letter-spacing: 0.02em;
+}
+
+.markdown-content tbody tr {
+  transition: background 0.2s ease;
+}
+
+.markdown-content tbody tr:hover {
+  background: var(--blockquote-bg);
+}
+
+
+/* ==========================================================================
+   分隔线 - 三星样式
+   ========================================================================== */
+
+.markdown-content hr {
+  border: none;
+  height: 0;
+  margin: var(--spacing-xl) 0;
+  position: relative;
+  text-align: center;
+}
+
+.markdown-content hr::before {
+  content: "\2726  \2726  \2726";
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  letter-spacing: 0.8em;
+  opacity: 0.6;
+}
+
+
+/* ==========================================================================
+   强调标记
+   ========================================================================== */
+
+.markdown-content strong {
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.markdown-content em {
+  font-style: italic;
+  font-family: var(--font-quote);
+}
+
+/* 删除线 */
+.markdown-content del {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* 标记高亮 */
+.markdown-content mark {
+  background: linear-gradient(transparent 60%, rgba(255, 237, 160, 0.5) 40%);
+  padding: 0 0.2em;
+  border-radius: 2px;
+}
+
+html.dark .markdown-content mark {
+  background: linear-gradient(transparent 60%, rgba(255, 200, 100, 0.2) 40%);
+}
+
+
+/* ==========================================================================
+   脚注（如果使用）
+   ========================================================================== */
+
+.markdown-content .footnotes {
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--border-light);
+  font-size: 0.9em;
+  color: var(--text-secondary);
+}
+
+.markdown-content .footnotes ol {
+  padding-left: 1.5rem;
+}
+
+
+/* ==========================================================================
+   任务列表
+   ========================================================================== */
+
+.markdown-content input[type="checkbox"] {
+  margin-right: 0.6rem;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+/* ==========================================================================
+   首字下沉（可选，需手动添加类名）
+   ========================================================================== */
+
+.markdown-content .drop-cap::first-letter {
+  float: left;
+  font-size: 4em;
+  line-height: 0.85;
+  margin: 0.1em 0.1em 0 0;
+  font-weight: 700;
+  color: var(--heading-color);
+  font-family: var(--font-heading);
+}
+
+
+/* ==========================================================================
+   响应式设计
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .markdown-content {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  
+  .markdown-content h1 { 
+    font-size: 1.9rem;
+    letter-spacing: 0.08em;
+  }
+  .markdown-content h2 { font-size: 1.6rem; }
+  .markdown-content h3 { font-size: 1.35rem; }
+  
+  .markdown-content pre code {
+    font-size: 0.85em;
+    padding: 2.8rem 1.2rem 1.2rem !important; /* 移动端也保持顶部空间 */
+  }
+  
+  /* 移动端复制按钮和语言标签位置调整 */
+  .markdown-content .copy-btn {
+    top: 8px;
+    right: 12px;
+  }
+  
+  .markdown-content pre[data-language]::before {
+    top: 8px;
+    left: 12px;
+    font-size: 0.65rem;
+  }
+  
+  .markdown-content table {
+    font-size: 0.88em;
+  }
+  
+  .markdown-content th,
+  .markdown-content td {
+    padding: 0.6rem 0.8rem;
+  }
+  
+  .markdown-content blockquote {
+    padding: 1.2rem 1.2rem;
+  }
+}
+
+
+/* ==========================================================================
+   打印样式 - 书籍感
+   ========================================================================== */
+
+@media print {
+  .markdown-content {
+    color: #000;
+    font-size: 11pt;
+    line-height: 1.6;
+  }
+  
+  .markdown-content .copy-btn {
+    display: none !important;
+  }
+  
+  .markdown-content a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .markdown-content a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+  
+  .markdown-content pre {
+    border: 1px solid #000;
+    page-break-inside: avoid;
+  }
+  
+  .markdown-content img {
+    max-width: 100%;
+    page-break-inside: avoid;
+  }
+  
+  .markdown-content h1, 
+  .markdown-content h2, 
+  .markdown-content h3 {
+    page-break-after: avoid;
+  }
+}
+
+
+/* ==========================================================================
+   滚动条美化
+   ========================================================================== */
+
+.markdown-content pre code::-webkit-scrollbar {
+  height: 6px;
+}
+
+.markdown-content pre code::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 3px;
+}
+
+.markdown-content pre code::-webkit-scrollbar-thumb {
+  background: var(--border-medium);
+  border-radius: 3px;
+}
+
+.markdown-content pre code::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+
+/* ==========================================================================
+   加载时的优雅过渡
+   ========================================================================== */
+
+.markdown-content {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

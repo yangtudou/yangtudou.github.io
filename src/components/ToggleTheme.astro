@@ -1,0 +1,101 @@
+---
+// src/components/ToggleTheme.astro
+---
+
+<button 
+  id="theme-toggle"
+  class="border-none bg-transparent p-0 cursor-pointer select-none opacity-60 md:hover:opacity-100 md:transition-opacity md:duration-200 active:scale-90 transition-transform"
+  title="切换主题"
+>
+  <div class="i-ri-sun-line dark:hidden text-xl text-gray-700 dark:text-gray-200"></div>
+  <div class="hidden dark:block i-ri-moon-line text-xl text-gray-700 dark:text-gray-200"></div>
+</button>
+
+<script is:inline>
+  function initThemeToggle() {
+    const btn = document.getElementById('theme-toggle');
+    if (!btn || btn.dataset.connected) return;
+
+    const toggleDark = async (event) => {
+      const isAppearanceTransition = document.startViewTransition
+        && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      if (!isAppearanceTransition) {
+        performToggle();
+        return;
+      }
+
+      // 🔑 关键修复：获取按钮的中心位置作为动画圆心
+      const rect = btn.getBoundingClientRect();
+      const x = rect.left + rect.width / 2;
+      const y = rect.top + rect.height / 2;
+      
+      const endRadius = Math.hypot(
+        Math.max(x, innerWidth - x),
+        Math.max(y, innerHeight - y)
+      );
+
+      const transition = document.startViewTransition(async () => {
+        performToggle();
+        await new Promise(resolve => setTimeout(resolve, 0));
+      });
+
+      transition.ready.then(() => {
+        const isDarkNow = document.documentElement.classList.contains('dark');
+        const clipPath = [
+          `circle(0px at ${x}px ${y}px)`,
+          `circle(${endRadius}px at ${x}px ${y}px)`,
+        ];
+
+        // 🔑 关键修复：两个方向使用相同的时长和缓动函数
+        document.documentElement.animate(
+          {
+            clipPath: isDarkNow ? clipPath : [...clipPath].reverse(),
+          },
+          {
+            duration: 500,  // 统一为 500ms
+            easing: 'cubic-bezier(0.4, 0, 0.2, 1)',  // 统一缓动函数
+            fill: 'forwards',
+            pseudoElement: isDarkNow
+              ? '::view-transition-new(root)'
+              : '::view-transition-old(root)',
+          }
+        );
+      });
+    };
+
+    function performToggle() {
+      const html = document.documentElement;
+      html.classList.toggle('dark');
+      localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+    }
+
+    btn.onclick = (e) => toggleDark(e);
+    btn.dataset.connected = "true";
+  }
+
+  initThemeToggle();
+  document.addEventListener('astro:after-swap', initThemeToggle);
+</script>
+
+<style is:global>
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none !important;
+    mix-blend-mode: normal !important;
+  }
+
+  .dark::view-transition-new(root) {
+    z-index: 9999;
+  }
+  .dark::view-transition-old(root) {
+    z-index: 1;
+  }
+
+  :root:not(.dark)::view-transition-new(root) {
+    z-index: 1;
+  }
+  :root:not(.dark)::view-transition-old(root) {
+    z-index: 9999;
+  }
+</style>

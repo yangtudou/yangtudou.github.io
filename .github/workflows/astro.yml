@@ -1,0 +1,52 @@
+name: 部署 Astro 站点到 GitHub Pages
+
+on:
+  # push:
+    # branches: [ main ] # 监听主分支代码提交
+  workflow_dispatch: # 允许手动触发
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 使用 Astro 官方 Action 自动检测依赖管理工具 (npm/pnpm/yarn)
+      - name: Install, build, and upload
+        uses: withastro/action@v3
+        with:
+          # 如果你的项目不在根目录，请修改 path
+          path: . 
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  # 保留你原来的清理工作流运行记录的任务（可选）
+  clean_workflow:
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - name: clean_workflow
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          retain_days: 0
+          keep_minimum_runs: 0
+          repository: ${{ github.repository }}

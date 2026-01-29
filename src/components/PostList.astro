@@ -1,0 +1,85 @@
+---
+import { getCollection } from 'astro:content'
+import type { CollectionEntry } from 'astro:content'
+
+export interface Props {
+  posts?: CollectionEntry<'post'>[]
+}
+
+const { posts: propPosts = [] } = Astro.props
+const allPosts = await getCollection('post')
+
+const filteredPosts = allPosts
+  .filter(post => !post.data.draft)
+  .map(post => ({
+    id: post.id,
+    title: post.data.title,
+    date: post.data.publishDate,
+  }))
+
+// 修复了之前导致报错的排序逻辑
+const allPostsList = [...propPosts, ...filteredPosts]
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+
+function formatDate(date: Date | string) {
+  const d = new Date(date)
+  const currentYear = new Date().getFullYear()
+  const postYear = d.getFullYear()
+  if (postYear === currentYear) {
+    return `${(d.getMonth() + 1).toString().padStart(2, '0')}-${d.getDate().toString().padStart(2, '0')}`
+  }
+  return `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}-${d.getDate().toString().padStart(2, '0')}`
+}
+
+function getYear(date: Date | string) { return new Date(date).getFullYear() }
+function isFuture(date?: Date | string) { return date && new Date(date) > new Date() }
+function isSameYear(a?: Date | string, b?: Date | string) { return a && b && getYear(a) === getYear(b) }
+function isSameGroup(a: any, b?: any) { return (isFuture(a.date) === isFuture(b?.date)) && isSameYear(a.date, b?.date) }
+function getGroupName(post: any) { return isFuture(post.date) ? '即将推出...' : getYear(post.date) }
+---
+
+<div class="flex flex-col">
+  {allPostsList.length === 0 ? (
+    <div class="py-10 opacity-50 text-center">这里还什么都没有</div>
+  ) : (
+    allPostsList.map((post, idx) => {
+      const showGroup = !isSameGroup(post, allPostsList[idx - 1]);
+      const href = `/posts/${post.id}`;
+      
+      return (
+        <div class="relative">
+          {showGroup && (
+            <div class="select-none relative h-20 pointer-events-none slide-enter font-Inter" style={`--enter-stage: ${idx - 2}; --enter-step: 100ms;`}>
+              <span class="text-8rem absolute font-bold z--1 top--2rem -left-3rem text-transparent text-stroke-1 text-stroke-hex-aaa opacity-20 dark:text-stroke-hex-555 dark:opacity-40">
+                {getGroupName(post)}
+              </span>
+            </div>
+          )}
+          <div class="slide-enter" style={`--enter-stage: ${idx}; --enter-step: 100ms;`}>
+            <a href={href} class="block mb-6 mt-2 no-underline group">
+              <div class="flex flex-col md:flex-row gap-2 md:items-center transition-opacity duration-200 hover:opacity-100">
+                <div class="text-lg leading-1.2em text-black dark:text-white">
+                  <span class="align-middle font-normal">{post.title}</span>
+                </div>
+                <div class="font-Inter flex items-center text-sm tabular-nums opacity-40 whitespace-nowrap md:ml-2">
+                  <span>{formatDate(post.date)}</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      )
+    })
+  )}
+</div>
+
+<style is:global>
+  @keyframes slide-enter {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  .slide-enter {
+    animation: slide-enter 3s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    animation-delay: calc(var(--enter-stage) * 100ms);
+  }
+</style>

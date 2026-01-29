@@ -1,0 +1,67 @@
+---
+/**
+ * ImageGallery.astro
+ */
+---
+<div id="lightbox-overlay" class="lightbox-hidden">
+  <div class="lightbox-wrapper">
+    <img id="lightbox-image" src="" alt="预览" />
+  </div>
+</div>
+
+<script>
+  function initGallery() {
+    const overlay = document.getElementById('lightbox-overlay')
+    const lightboxImg = document.getElementById('lightbox-image')
+
+    document.addEventListener('click', (e) => {
+      const target = e.target
+      
+      // ✅ 关键：类名必须匹配 PostLayout 中的 article 类名
+      if (
+        target instanceof HTMLImageElement &&
+        target.closest('.markdown-content') 
+      ) {
+        if (target.naturalWidth < 100) return
+
+        e.preventDefault()
+        if (!overlay || !lightboxImg) return
+
+        lightboxImg.src = target.src
+        overlay.classList.remove('lightbox-hidden')
+        overlay.classList.add('lightbox-visible')
+        document.body.style.overflow = 'hidden'
+      }
+    })
+
+    if (overlay) {
+      overlay.onclick = () => {
+        overlay.classList.remove('lightbox-visible')
+        overlay.classList.add('lightbox-hidden')
+        document.body.style.overflow = ''
+      }
+    }
+  }
+
+  document.addEventListener('astro:page-load', initGallery)
+  initGallery()
+</script>
+
+<style is:global>
+  /* 保持原有 lightbox 样式，不赘述 */
+  #lightbox-overlay {
+    position: fixed; inset: 0; z-index: 10000;
+    display: flex; align-items: center; justify-content: center;
+    cursor: zoom-out; transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    backdrop-filter: blur(30px) saturate(210%);
+    background: rgba(255, 255, 255, 0.7);
+    visibility: hidden; opacity: 0;
+  }
+  html.dark #lightbox-overlay { background: rgba(10, 10, 10, 0.75); }
+  #lightbox-overlay.lightbox-visible { visibility: visible; opacity: 1; }
+  #lightbox-image {
+    max-width: 92vw; max-height: 88vh; border-radius: 20px;
+    transform: scale(0.92); transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #lightbox-overlay.lightbox-visible #lightbox-image { transform: scale(1); }
+</style>

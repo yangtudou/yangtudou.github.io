@@ -1,0 +1,80 @@
+---
+import BaseLayout from './BaseLayout.astro'
+import ImageGallery from '../components/ImageGallery.astro'
+import AutoCarousel from '../components/AutoCarousel.astro';
+import { formatDate } from '../utils'
+
+import '../styles/markdown.css'
+
+const { frontmatter } = Astro.props
+const displayTitle = frontmatter?.title || '无标题'
+const publishDate = frontmatter?.publishDate
+const description = frontmatter?.description
+---
+
+<BaseLayout title={displayTitle} description={description}>
+  <header class="mb-12">
+    <h1 class="text-3xl md:text-4xl font-bold leading-tight">{displayTitle}</h1>
+    <div class="mt-4 text-sm opacity-60">
+      {publishDate && <time>{formatDate(publishDate)}</time>}
+    </div>
+  </header>
+
+  {/* 统一类名，移除 prose 默认干扰，改由 markdown.css markdown-content 完全控制 */}
+  <article class="markdown-content">
+    <slot />
+  </article>
+
+  <ImageGallery />
+  <AutoCarousel />
+
+  <footer class="mt-24 pb-10 border-t border-black/5 dark:border-white/5 pt-8">
+    <a href="/" class="text-sm opacity-60 hover:opacity-100 transition-opacity">← 返回首页</a>
+  </footer>
+</BaseLayout>
+
+<script>
+  function initCopyButtons() {
+    const blocks = document.querySelectorAll('.markdown-content pre');
+    blocks.forEach((pre) => {
+      if (pre.querySelector('.copy-btn')) return;
+
+      const container = document.createElement('div');
+      container.className = 'copy-btn';
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      
+      const copyIcon = '<span class="inner-icon i-lucide-copy"></span>';
+      const checkIcon = '<span class="inner-icon i-lucide-check text-green-500"></span>';
+      
+      btn.innerHTML = copyIcon;
+      container.appendChild(btn);
+      pre.appendChild(container);
+
+      btn.onclick = async (e) => {
+        e.stopPropagation();
+        const codeElement = pre.querySelector('code');
+        const text = codeElement ? codeElement.innerText : '';
+        try {
+          await navigator.clipboard.writeText(text);
+          btn.innerHTML = checkIcon;
+          setTimeout(() => { btn.innerHTML = copyIcon; }, 2000);
+        } catch (err) {
+          const input = document.createElement('textarea');
+          input.value = text;
+          input.style.position = 'fixed';
+          input.style.opacity = '0';
+          document.body.appendChild(input);
+          input.select();
+          document.execCommand('copy');
+          document.body.removeChild(input);
+          btn.innerHTML = checkIcon;
+          setTimeout(() => { btn.innerHTML = copyIcon; }, 2000);
+        }
+      };
+    });
+  }
+
+  document.addEventListener('astro:page-load', initCopyButtons);
+  initCopyButtons();
+</script>
