@@ -1,8 +1,8 @@
-name: 部署 Astro 站点到 GitHub Pages
+name: Deploy Astro Site
 
 on:
-  # push:
-    # branches: [ main ]
+  push:
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
@@ -19,20 +19,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Install, build, and upload
         uses: withastro/action@v3
         with:
-          path: . 
-          # ✅ 添加下面这一行，指定你本地使用的 pnpm 版本（例如 8 或 9）
-          pnpm-version: 9
+          path: .
+          # 指定你的具体 pnpm 版本
+          pnpm-version: 10.28.0
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      [cite_start]url: ${{ steps.deployment.outputs.page_url }} [cite: 2]
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
+        uses: actions/deploy-pages@v4
